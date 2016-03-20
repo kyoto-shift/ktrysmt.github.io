@@ -11,4 +11,5 @@ highlighter: rouge
 permalink: /:title/
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
- 
+avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+
