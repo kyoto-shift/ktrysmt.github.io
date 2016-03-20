@@ -1,0 +1,52 @@
+---
+layout: post
+title: "今のところよく使う.bashrc"
+date: 2014-01-31 5:00:01 +0000
+comments: true
+category: Bash
+tags: Bash Git Vim
+published: true
+---
+
+### 追記（2014/09/07）
+githubに私のdotfilesを作成、今はそっちで管理しています。`.bashrc`と`.vimrc`の設定を入れてます。
+
+私のbashrc、なるべくシンプルにしたいが、まだまだ行数は増えそうだ…。
+
+```
+$ vi .bashrc
+```
+
+```
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias vi="vim"
+alias ll='ls -la'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+alias gco="git checkout"
+alias gst="git status"
+alias gci="git commit -a"
+alias gdi="git diff"
+alias gbr="git branch"
+alias gpl="git pull"
+alias gps="git push"
+
+source /usr/share/doc/git-1.8.2.1/contrib/completion/git-prompt.sh
+source /usr/share/doc/git-1.8.2.1/contrib/completion/git-completion.bash
+GIT_PS1_SHOWDIRTYSTATE=true
+export PS1='\[\033[1;32m\]\u@\h\[\033[00m\]:\[\033[1;34m\]\w\[\033[1;31m\]$(__git_ps1)\[\033[00m\][\t]$ '
+```
+
+最後のほうにあるのはGitの入力補完とプロンプト表示。
+おまけで、最後の行の末尾らへんに`[\t]`をつけている。これでタイムスタンプを表示できる。
+
+これが地味に便利で、時計代わりに使ったり、コマンド実行時の時刻をおおまかに把握できたり。
+

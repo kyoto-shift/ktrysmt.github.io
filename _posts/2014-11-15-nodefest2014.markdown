@@ -1,0 +1,319 @@
+---
+layout: post
+title: "東京node学園祭2014個人的まとめ"
+date: 2014-11-15 21:00:24 +0000
+comments: true
+category: Node
+tags: Node Javascript
+published: true
+---
+
+node学園祭2014いってきたので自分用にまとめ。
+
+知らない単語が多かったのであとで見返したり試しに使ってみる。
+
+なるべくスライドは拾ったつもりだけど見つけたら足す。ついでに関連した用語やハッシュタグのタイムラインで紹介されてたURLなんかも気になったものはとりあえずなんでも載せときます。
+
+Twitterのハッシュタグは#nodefest
+
+
+
+
+## WORKSHOP
+
+
+### workshop - socket.io v1.0 @TonyKovanen
+
+- <https://github.com/rase-/socket.io-workshop-full>
+
+ワークショップで使ったリポジトリ、あとでみてみる
+
+### nodeschool in Japan @maxogden
+
+- <http://nodeschool.io/tokyo/>
+
+こっちのは初心者向け。
+
+
+
+
+
+
+## SESSION
+
+
+
+
+### 基調講演 @rauchg
+
+- <http://party.rauchg.com/>
+
+ファイル分割してアップロードできるフレームワークのparty。  
+アメリカのサーバへファイル転送してるようなんだけど速度はたしかに早い。websocketにチェック入れたらなんか動かなかった。まだ公開してない、coming soonらしい。
+
+- <https://github.com/Automattic>
+
+Automattic社のGithubリポジトリ。なんかすごいのいっぱい
+
+
+
+
+
+
+
+
+### What’s coming in Node, Express & LoopBack @ijroth
+
+- <http://loopback.io/> 
+
+StrongLoop社製の新しいnode.jsフレームワーク。
+
+
+
+
+
+
+
+### node.js for beginners, grunt gulp browserify webpack bower @ahomu
+
+- [Front-end with Node.js Tools // Speaker Deck](https://speakerdeck.com/ahomu/front-end-with-node-dot-js-tools)
+
+スライド。
+
+- <https://gist.github.com/ahomu/3d4a5e57bb7c936d8cab>
+
+サマリー(@ahomuさんのGist)
+
+- <http://qiita.com/cognitom/items/4c63969b5085c90639d4> Browserify
+
+パッケージ管理とかタスクランナーとか今後ブラウザが新しい機能を実装していくうちに置き換えられていくものなのでそういった背景の中で使いやすいものから使っていくといいよってことのようだ。その中の筆頭がBrowserifyで、CommonJSに慣れておけば無理なく導入できそう。
+
+ほか、`glup`,`Bower`,`Grunt`,`Duo.js`,`Webpack`,`npm-run`.
+
+
+
+
+
+
+
+### Node-v0.12のTLSを256倍使いこなす方法 @jovi0608
+
+- [Node-v0.12のTLSを256倍使いこなす方法](http://www.slideshare.net/shigeki_ohtsu/node-fest2014-ohtsu?ref=http://nodejs.connpass.com/event/9144/presentation/)
+
+スライド。
+
+
+
+
+### テスト用ライブラリ power-assert, その開発で学んだ npm モジュール設計の勘所 @t_wada
+
+- [power-assert, mechanism and philosophy](http://www.slideshare.net/t_wada/power-assert-nodefest-2014)
+
+スライド。
+
+- <http://d.hatena.ne.jp/asakichy/20100526/1274887168>
+- <http://ja.wikipedia.org/wiki/UNIX%E5%93%B2%E5%AD%A6>
+
+沈黙の原則、Unix哲学。@t_wadaさんがUnix哲学の話をしてた時に聞いてググった。あとで読む
+
+- <https://www.npmjs.org/package/esprima>
+- <https://github.com/Constellation/escodegen>
+- <https://github.com/Constellation/estraverse>
+
+esprima,escodegen,estraverse. power-assertの内部構造の話、あとでみる
+
+
+
+
+
+
+
+### ギャルでもゎかる node-webkit @upgrade_ayp
+
+スライドなし、すごい面白かったのでできれば見直したい。
+
+- <http://shokai.org/blog/archives/8586> node-webkitでNHK Newsを連続自動再生
+
+node-webkitすげぇって思ってググったらでてきたこれもちょっと参考に
+
+- <http://www.slideshare.net/HatanoAya/js1-32817077>
+
+node-webkit & chrome-remote-interfaceでブラウザオートメーション、こんなのもみつけた
+
+- <https://www.google.co.jp/search?q=web+crypto+%E3%81%A7%E3%81%AA%E3%82%93%E3%81%8B%E6%9A%97%E5%8F%B7%E5%8C%96&oq=web+crypto+%E3%81%A7%E3%81%AA%E3%82%93%E3%81%8B%E6%9A%97%E5%8F%B7%E5%8C%96&aqs=chrome..69i57j69i64&sourceid=chrome&es_sm=93&ie=UTF-8#q=web+crypto+%E6%9A%97%E5%8F%B7%E5%8C%96> Web crypto で暗号化。
+
+たしかnode-webkitの話の時のソース保護とか暗号化の話してたときにググった気がする
+そんなこともできるのかと驚いた
+
+- <https://github.com/mochajs/mocha/wiki/Using-mocha-with-node-webkit> 
+
+Using mocha with node webkit. mochaもいいけど、今はpower-assertに気が行っている
+
+
+
+
+
+### すべてのノードトランスパイラーがひどい！ならば、ノードトランスパイラーをいかに改善できるか。 @leichtgewicht
+ 
+- [NodeFest2014 - Transpiler](http://www.slideshare.net/leichtgewicht/nodefest2014-transpiler)
+
+スライド
+
+### Node.jsで操るKurentoメディアサーバー @massie_g
+
+- [Nodeで操るKurentoメディアサーバー ( Kurento + WebRTC + Node.js )](http://www.slideshare.net/mganeko/nodekurento)
+
+node-webkitの話し聞いてて聞けなかった。あとでみる
+
+
+
+
+
+
+
+## LT
+
+
+### 新しい並行計算ライブラリjs-cspをご紹介 @niryuu
+
+- <http://www.slideshare.net/niryuu/jscsp-41585681>
+
+スライド
+
+- <https://github.com/ubolonton/js-csp>
+
+Callbackの山と戦うあなたにjs-csp、`js-csp requires ES6 generators.`らしいです。
+
+
+
+
+
+
+### ド初心者が5000QPSの広告配信APIをNode.jsで構築したおはな死 @zuqqhi2, @Jimisky
+
+- <https://github.com/node-xmpp/node-expat> 
+
+node-expat
+
+- <https://github.com/AlexeyKupershtokh/node-v8-clone>
+
+C++。LTでパフォーマンス改善してたふたりの話から。
+
+- <https://twitter.com/mizchi/status/533532754843951106>
+
+「XMLのパースをjQueryからnode-expat に変えて 250ms -> 1ms ってのが一番クリティカル」
+
+
+
+
+
+### node.js + socket.io + mongoDB で本格風リアルタイムWEBサイトを作ってみた @ozatty96
+
+スライドなし
+
+
+
+### node.jsでビッグデータを処理する　@neo6120
+
+- <https://twitter.com/mizchi/status/533536214301683714>
+
+Hadoop
+
+
+### A Profiling and Monitoring Method for Nodejs Applications　@setogit
+
+- <http://concurix.com/>
+- <https://github.com/Concurix/cx-helloworld-readme-ja>
+
+nodeでモニタリング。ライセンスは1つにつき$50みたい。
+
+
+
+### <http://sanemat.github.io/talks/20141115-dependency-hell/>
+
+- <https://github.com/bnoordhuis/node-heapdump>
+
+nodeでheapダンプってこれ？
+
+- <https://www.npmjs.org/package/ndump>
+
+いやこっちか。npmのndump.`ndump.heap(filepath)`, `ndump.cpu(filepath,times)`で呼べるようだ
+
+
+
+
+
+### node.js で通信対戦ゲーム作ってみた
+
+- [東京Node学園祭2014 飛び入りLT](http://www.slideshare.net/yuusuketakeuchi96/node2014-lt)
+
+- <http://gbraver.herokuapp.com/>
+
+socket.ioでできてる対戦ゲームみたい。実際に対戦モードやったらどんなふうかあとで試す
+
+
+
+
+
+## 他の方のまとめ,アウトライン
+
+- <http://efcl.info/2014/11/15/nodefest-2014/>
+
+- <http://blog.sasaplus1.com/2014/11/16/01/>
+
+- <http://lealog.hateblo.jp/entry/2014/11/15/234306>
+
+- <http://ledsun.hatenablog.com/entry/2014/11/16/114850>
+
+
+
+## 参考
+
+- <https://github.com/imaya/zlib.js/>
+
+Javascriptでファイル圧縮。
+
+- <https://github.com/mizchi/my-feed-reader/blob/master/crawler.coffee>
+
+これなんでブクマしてたんだっけか
+
+- <http://sweetjs.org/> sweet.js
+
+タイムラインに出てたのでとりあえずメモ
+
+- <http://www.slideshare.net/shigeki_ohtsu/node-fest2014-ohtsu>
+
+Node-v0.12のTLSを256倍使いこなす方法(@jovi0608)
+
+- <https://www.npmjs.org/package/nodegrind>
+
+nodejs full profiler
+
+- <https://status.modern.ie/> 
+
+たぶんこれメモったのは最近のMicrosoftいいよねって話から。主にVisualStudio,Azure,TypeScriptあたりが。LTのひとChrome使ってておもしろかった。Azure、ブラウザだけでnode書けるのは驚いた。
+
+- <http://qiita.com/sinmetal/items/154e81823f386279b33c>
+
+nodeをnodebrewでバージョン管理する話が出ててその使い方、あとでみる
+
+- <http://www.modulecounts.com/>
+
+各プログラミング言語のモジュール数の比較。たしかにnpmが一番多い。
+
+- <https://twitter.com/hokaccha/status/533547504759865347>
+
+nodeのビルドオプション確認方法：`node -e 'console.log(process.config)'`でとれるっぽ
+
+- <https://twitter.com/teppeis/status/533543739566735360> 
+
+クラウドゲーミングの話。サーバーでcanvasのコマンドを生成してzlibで圧縮してwebsocketに送ってクライアントで再生するらしい。sugoi!!
+
+
+
+
+## 感想
+
+久しぶりに刺激的な一日となりました。未来感あった。
+
+スタッフの皆さまありがとうございました、お疲れ様でした。

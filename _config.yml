@@ -1,0 +1,12 @@
+name: keidrip.github.io
+github: https://www.github.com/keidrip
+about: I am a Web Developer from Tokyo, Japan.
+urls:
+    - text: github
+      url: https://github.com/keidrip
+    - text: category
+      url: /category/
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+ 

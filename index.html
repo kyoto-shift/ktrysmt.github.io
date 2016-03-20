@@ -1,0 +1,22 @@
+---
+layout: default
+---
+ 
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+    <li class="index">
+      <span class="time">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h1>Applications</h1>
+  <ul class="posts">
+    <li><a href="http://github.com/keidrip/checkup/">checkup</a> - A E2E testing tool made by Golang.</li>
+  </ul>
+ 
+</div>
+
+

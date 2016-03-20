@@ -1,0 +1,58 @@
+---
+layout: post
+title: "GoでSeleniumWebdriverのラッパーを作った"
+date: 2015-07-29
+comments: true
+category: Golang
+tags: Selenium Golang CLI
+published: true
+---
+
+yamlフォーマットでテストケースが書けるコマンドラインツールを作った。
+
+名前つけるのは苦手なのだが、色々考えた結果checkupっていう名前にした。
+
+- https://github.com/keidrip/checkup
+
+## 特徴
+
+似たようなツールは多くあるけど、他との違いとしては、
+
+- Selenium2をstep名を揃えた
+- ymlはローカルファイルを食わせるだけじゃなくhttp(s)でURL指定できるようにした
+
+## 今後
+
+残りのTodoとしては、せっかくなのでAppiumに対応してみたいのと、store系のstepはさすがに不要だろうと思って作っていないので、
+必要な場面が来たら作ろうかなと思ってる。
+
+## 収穫
+
+ツールとしては結構未だ荒削りでGoの書き方もイマイチな気はしてるが、
+収穫としては、
+
+- Selenium JSON Wire protocolは把握した
+- Goの基本的な使い方を習得した
+- SeleniumGridおよびそれを簡単に使うアーキテクチャの理解
+
+というところだろうか。
+
+## 考察
+
+EtoEテストを楽に安全になるべく高速に行うためにあれこれ考えている。
+
+SeleniumGridについてはやはりDockerを使うのがラクチン。
+ただ、standalone型のほうがリソースを無駄遣いしないので都合がいいと思っている。
+
+主に自分が使うシーンしか想定してないが、
+以下の様な流れで使うことを考えていた。
+
+1. seleniumのDocker(standalone)にcheckupのバイナリ仕込んでビルド
+1. JenkinsやCI経由でそのDockerImageを起動
+1. 引数でymlを食わせて実行
+1. 終わったら標準出力・標準エラーをJenkinsに返す
+1. Docker破棄
+
+
+
+
