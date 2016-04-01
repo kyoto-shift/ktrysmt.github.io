@@ -12,7 +12,7 @@ published: true
 
 `ghq`があるなら`ghq`経由のほうがすぐ終わる。
 
-```
+```bash:terminal
 go build 2>&1 | grep cannot | awk -F'"' '{print $2}' | xargs -I _ ghq get https://_
 ```
 
