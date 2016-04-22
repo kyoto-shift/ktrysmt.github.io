@@ -11,7 +11,8 @@ published: true
 気になった記事まとめ。
 
 ## Infrastructure as Code 再考
-- <http://mizzy.org/blog/2016/04/22/1/>
+
+<http://mizzy.org/blog/2016/04/22/1/>
 
 - プロセスステップおさらい
   - バージョン管理
@@ -51,28 +52,38 @@ published: true
       - モニタリング、サービスディスカバリ、プロセス・ジョブ管理、ソフトウェアデプロイメントなど
   - 分類はわかりやすいが似ているツールをグルーピングしただけでどうあるべきかまでは到達しない
   - そこはやはり領域定義がはっきりすべきか
-- Apline Linux https://speakerdeck.com/stormcat24/qing-liang-imezishi-dai-wo-sheng-kirutamefalsealpine-linux
-  - RancherOS,CoreOSとの有意差は？
-    - Dockerが正式採用してる
-    - AmebatvFreshで使ってるらしい
-  - 軽量、ISO80MB,コンテナ2MB
-    - 軽さだけならRancherのが上だがどうか
-  - パッケージ管理
-    - apk使うらしい
-    - 適度に枯れてる
-  - リポジトリ
-    - 若干追従遅い
-    - ubuntuにはかなわないがubuntuは重い
-  - SnappyUbuntuではダメなのか
-    - 正直まだ荒削りで使うの怖い感
-  - 結局ビルドインストール
-    - まぁそれはそうなんだけどDocker使いたいって話なので...
-    - 監視系やプロキシサーバはホストに入れる可能性もあるから仕方ないかも
-    - http/2はnginxビルドインストールv1.9系だし
-- React use-case https://docs.google.com/spreadsheets/d/1aMzqpzgpI8uvBZ5fCrsIo-A8s_9-ITa1r32p04yLd3k/edit#gid=0
-  - Webpack vs Browserify
-  - 再考の余地あり
-  - ほんとに半々っぽい
-  - React-Reduxがデファクトっぽい
-- Ubuntu 16.04 Release http://releases.ubuntu.com/xenial/
-  - 週末触ってみよ
+
+## Apline Linux 
+
+<https://speakerdeck.com/stormcat24/qing-liang-imezishi-dai-wo-sheng-kirutamefalsealpine-linux>
+
+- RancherOS,CoreOSとの有意差は？
+  - Dockerが正式採用してる
+  - AmebatvFreshで使ってるらしい
+- 軽量、ISO80MB,コンテナ2MB
+  - 軽さだけならRancherのが上だがどうか
+- パッケージ管理
+  - apk使うらしい
+  - 適度に枯れてる
+- リポジトリ
+  - 若干追従遅い
+  - ubuntuにはかなわないがubuntuは重い
+- SnappyUbuntuではダメなのか
+  - 正直まだ荒削りで使うの怖い感
+- 結局ビルドインストール
+  - まぁそれはそうなんだけどDocker使いたいって話なので...
+  - 監視系やプロキシサーバはホストに入れる可能性もあるから仕方ないかも
+  - http/2はnginxビルドインストールv1.9系だし
+
+## React use-case 
+
+<https://docs.google.com/spreadsheets/d/1aMzqpzgpI8uvBZ5fCrsIo-A8s_9-ITa1r32p04yLd3k/edit#gid=0>
+
+- Webpack vs Browserify
+- 再考の余地あり
+- ほんとに半々っぽい
+- React-Reduxがデファクトっぽい
+
+## Ubuntu 16.04 Release 
+<http://releases.ubuntu.com/xenial/>
+- 週末触ってみよ
