@@ -10,7 +10,7 @@ published: true
 
 気になった記事まとめ。
 
-## Infrastructure as Code 再考
+### Infrastructure as Code 再考
 
 <http://mizzy.org/blog/2016/04/22/1/>
 
@@ -53,7 +53,7 @@ published: true
   - 分類はわかりやすいが似ているツールをグルーピングしただけでどうあるべきかまでは到達しない
   - そこはやはり領域定義がはっきりすべきか
 
-## Apline Linux 
+### Apline Linux 
 
 <https://speakerdeck.com/stormcat24/qing-liang-imezishi-dai-wo-sheng-kirutamefalsealpine-linux>
 
@@ -75,7 +75,7 @@ published: true
   - 監視系やプロキシサーバはホストに入れる可能性もあるから仕方ないかも
   - http/2はnginxビルドインストールv1.9系だし
 
-## React use-case 
+### React use-case 
 
 <https://docs.google.com/spreadsheets/d/1aMzqpzgpI8uvBZ5fCrsIo-A8s_9-ITa1r32p04yLd3k/edit#gid=0>
 
@@ -84,6 +84,8 @@ published: true
 - ほんとに半々っぽい
 - React-Reduxがデファクトっぽい
 
-## Ubuntu 16.04 Release 
+### Ubuntu 16.04 Release 
+
 <http://releases.ubuntu.com/xenial/>
+
 - 週末触ってみよ
