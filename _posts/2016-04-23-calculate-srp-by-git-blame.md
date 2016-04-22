@@ -8,7 +8,7 @@ tags: Git
 published: true
 ---
 
-[git blameによるSRP（単一責任原則）の定量化](http://ni66ling.hatenadiary.jp/entry/2015/06/25/000444) が便利だったので早速自分の環境に組み込んで使ってる。
+![git blameによるSRP（単一責任原則）の定量化](http://ni66ling.hatenadiary.jp/entry/2015/06/25/000444) が便利だったので早速自分の環境に組み込んで使ってる。
 
 が、計算式をよく見ると、  
 コミット数・ユーザー数・コードの行数を加算してソートしていてそこだけキモチワルイ。
