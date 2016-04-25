@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "'git blameでSRP算出' が便利"
+title: "「git blameでSRP算出」が便利"
 date: 2016-04-23
 comments: true
 category: Git
@@ -29,7 +29,7 @@ for file in `git ls-files | grep -E '\.js$'`; do
 done | sort -k 1,1 -k 2,2 -k 3,3 -nr
 ```
 
-sort優先順位は個人的な主観で`コミット数＞行数＞ユーザー数`にしている。  
+sort優先順位は個人的な主観で`コミット数 > 行数 > ユーザー数`の順にしている。  
 また、最近JSをよく触るので計測対象は`.js`にしている。  
 
 [L1]:http://ni66ling.hatenadiary.jp/entry/2015/06/25/000444
