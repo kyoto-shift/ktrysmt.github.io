@@ -1,16 +1,15 @@
-name: keidrip.github.io
-url: https://keidrip.github.io/
-github: https://www.github.com/keidrip
+name: ktrysmt.github.io
+url: https://ktrysmt.github.io/
+github: https://www.github.com/ktrysmt
 about: I am a Web Developer from Tokyo, Japan.
 urls:
     - text: 'Category List'
       url: /category/
     - text: Github
-      url: https://github.com/keidrip 
+      url: https://github.com/ktrysmt
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
-
