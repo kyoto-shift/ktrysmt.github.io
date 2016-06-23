@@ -71,6 +71,11 @@ div#container {
     -webkit-box-shadow:0px 0px 6px 3px #e6e6e6;
 }
 
+div.header {
+        margin-left:20px;
+        margin-bottom:20px;
+}
+
 div.container {
     background-color: white;
     box-shadow:0px 0px 6px 3px #e6e6e6;
