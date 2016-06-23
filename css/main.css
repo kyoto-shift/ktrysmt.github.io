@@ -12,6 +12,10 @@ body {
   .container, .header {
     max-width: 1160px;
   }
+  .header {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 /**
  * //////////////////////////
