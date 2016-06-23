@@ -19,9 +19,25 @@
     </head>
     <body>
 
+                <div class="header">
+			<h1><a href="{{ site.url }}">{{ site.name }}</a></h1>
+                </div>
+
 		<div class="container">
 
-			<div class="col-sm-3">
+			<div class="col-sm-7">
+				
+				{{ content }}
+				
+				<footer>
+					&copy; {{ site.name }}
+					{% if site.github %} 
+						- <a href="{{ site.github }}">{{ site.github }}</a>
+					{% endif %}
+				</footer>
+			</div>
+
+ 			<div class="col-sm-3 col-offset-1">
 				<h1><a href="{{ site.url }}">{{ site.name }}</a></h1>
 				<img id="about" src="https://avatars3.githubusercontent.com/u/6156742?v=3&s=96" height="75px" width="75px" /><br />	
 
@@ -38,18 +54,7 @@
 				</div>
 				{% endif %}
 			</div>
-
-			<div class="col-sm-7 col-offset-1">
-				
-				{{ content }}
-				
-				<footer>
-					&copy; {{ site.name }}
-					{% if site.github %} 
-						- <a href="{{ site.github }}">{{ site.github }}</a>
-					{% endif %}
-				</footer>
-			</div>
+ 
 		
 		</div>
 
