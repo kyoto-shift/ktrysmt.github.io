@@ -8,26 +8,6 @@ body {
     background: #eee;
 }
 
-@media (min-width: 768px) {
-  .container, .header {
-    max-width: 1160px;
-  }
-}
-@media (min-width: 768px) {
-  .header {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .header {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .header {
-    width: 1170px;
-  } 
-} 
 /**
  * //////////////////////////
  * Font and link declarations
@@ -87,10 +67,10 @@ div#container {
 }
 
 div.header {
-  margin-left: auto;
+/*  margin-left: auto;
   margin-bottom: 20px;
   margin-right: auto;
-  padding-left: 20px;
+  padding-left: 20px; */
 }
 
 div.container {
