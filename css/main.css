@@ -13,18 +13,20 @@ body {
     max-width: 1160px;
   }
 }
-
-@media (min-width: 1200px)
-.header {
+@media (min-width: 1200px) {
+  .header {
     width: 1170px;
+  } 
 }
-@media (min-width: 992px)
-.header {
+@media (min-width: 992px) {
+  .header {
     width: 970px;
+  }
 }
-@media (min-width: 768px)
-.header {
+@media (min-width: 768px) {
+  .header {
     width: 750px;
+  }
 }
 
 /**
