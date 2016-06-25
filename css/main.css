@@ -71,6 +71,11 @@ div#container {
     -webkit-box-shadow:0px 0px 6px 3px #e6e6e6;
 }
 
+div#home section {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 div.header {
   border-bottom: 1px solid #e6e6e6;
   margin-bottom: 16px;
