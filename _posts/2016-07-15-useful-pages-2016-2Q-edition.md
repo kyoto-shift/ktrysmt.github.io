@@ -1,0 +1,42 @@
+---
+layout: post
+title: "個人的によかった記事まとめ 2016年2Q版"
+date: 2016/07/15
+comments: true
+category: Useful-pages
+tags: Useful-pages
+published: true
+---
+
+つらつらと、日々更新してく。
+
+GoやDocker,Javascriptが多めかも。
+
+
+### [急いでダウンロードしたい時はwgetやcurlじゃなくてaxelを使おう](http://qiita.com/sarumonera/items/2b30999d7d41a4747d74)
+
+`brew`も`apt-get`もいける。RHEL系も`rpm -ivh`でいける。  
+ただ受け付けないサーバもあるので結局`wget`でよくね？って思った。
+ISOを落とすとかユースケースが限られたなぁと。
+
+### [プライベートなDockerレジストリサーバーをコンテナで立てる](http://qiita.com/rsakao/items/617f54579278173d3c20)
+
+よくまとまってて取っ掛かりになった。
+
+### [【Docker】Docker imageをexport \- ITの隊長のブログ](http://www.aipacommander.com/entry/2015/12/10/205240)
+
+ほんとにアーキテクチャ薄っぺらくて良いのならば最悪S3Bucketさえ用意できればOKだよ、というのは嬉しいポイント。
+Docker利用モチベが上がる。
+
+### [DSAS開発者の部屋:go\-sql\-driver/mysql でプレースホルダ置換をサポートしました](http://dsas.blog.klab.org/archives/52191467.html)
+
+`interpolateParams=true`を足せばよいという学びは思いの外大きいかもしれない。
+そもそもMySQLは慣れてはいるのだけどそれでもそれ専用のインプットが大量に必要になるのでツライ。
+データベースエンジニアを尊敬しつつも、ウェブサービス開発チームとして考えると…
+O/Rマッパを使って雑なSQLを叩くようなアプリエンジニアと付き合わないといけないデータベースエンジニア、が、…圧倒的に可哀想になってくる記事だった。
+
+
+### [PHPのオブジェクト指向入門 \| オブジェクト指向PHP\.NET](http://www.objective-php.net/basic/static)
+
+特にシングルトンのメリットを他人に説明するときに便利だった記事。結構わかりやすく書いてある。
+PHPerはこういう話まったく通じない人が結構いて本当に参ったなーって感じになる。まるでifとforeach以外の関数を知らないのかと思えてくるほどに。
