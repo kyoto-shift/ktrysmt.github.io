@@ -24,7 +24,7 @@ logo: false
 paginate: 9999
 permalink: /:title/
 baseurl: /
-domain_name: 'https://ktrysmt.github.io/'
+domain_name: 'https://ktrysmt.github.io'
 gems: 
   - jekyll-paginate
   - jekyll-sitemap 
