@@ -3,8 +3,8 @@ layout: post
 title: "$B8D?ME*$K$h$+$C$?5-;v$^$H$a(B 2016$BG/(B2Q$BHG(B"
 date: 2016-07-15
 comments: true
-category: Useful-pages
-tags: Useful-pages
+category: Scraps
+tags: Scraps
 published: true
 ---
 
@@ -40,3 +40,4 @@ O/R$B%^%C%Q$r;H$C$F;($J(BSQL$B$rC!$/$h$&$J%"%W%j%(%s%8%K%"$HIU$-9g$o$J$$$H$$$
 
 $BFC$K%7%s%0%k%H%s$N%a%j%C%H$rB>?M$K@bL@$9$k$H$-$KJXMx$@$C$?5-;v!#7k9=$o$+$j$d$9$/=q$$$F$"$k!#(B
 PHPer$B$O$3$&$$$&OC$^$C$?$/DL$8$J$$?M$,7k9=$$$FK\Ev$K;2$C$?$J!<$C$F46$8$K$J$k!#$^$k$G(Bif$B$H(Bforeach$B0J30$N4X?t$rCN$i$J$$$N$+$H;W$($F$/$k$[$I$K!#(B
+
