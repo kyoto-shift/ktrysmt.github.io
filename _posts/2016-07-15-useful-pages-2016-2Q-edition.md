@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "個人的によかった記事まとめ 2016年2Q版"
-date: 2016/07/15
+date: 2016-07-15
 comments: true
 category: Useful-pages
 tags: Useful-pages
