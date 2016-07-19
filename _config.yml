@@ -21,7 +21,7 @@ url: https://ktrysmt.github.io/
 markdown: kramdown
 highlighter: rouge
 logo: false
-paginate: 100
+paginate: 9999
 permalink: /:title/
 baseurl: /
 domain_name: 'https://ktrysmt.github.io/'
