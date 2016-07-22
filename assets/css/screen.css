@@ -896,8 +896,6 @@ body:not(.post-template) .post-title {
     border-left: 5px solid #eee;
     padding-left: 8px;
     margin-bottom: 15px;
-    color: #999;
-    font-weight: normal; 
 }
 
 /* Keep images centred and within the bounds of the post-width */
