@@ -673,6 +673,7 @@ margin on the iframe, cause it breaks stuff. */
     margin: 0;
     font-size: 2rem;
     line-height: 1.5em;
+    border: none;
     font-weight: 400;
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
