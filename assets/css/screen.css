@@ -748,6 +748,8 @@ margin on the iframe, cause it breaks stuff. */
 
 body:not(.post-template) .post-title {
     font-size: 2.6rem;
+    border: none;
+    padding-bottom: 0;
 }
 
 .post-title a {
@@ -1397,7 +1399,7 @@ body:not(.post-template) .post-title {
 
     h2 {
         font-size: 2.4rem;
-        padding-bottom: 5px;
+        padding-bottom: 8px;
         border-bottom: 1px solid #eee;
     }
 
