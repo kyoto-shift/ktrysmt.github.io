@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+
+  <link rel="stylesheet" href="lib/codemirror.css">
+  <link rel="stylesheet" href="theme/icecoder.css"> 
+
+  <script src="lib/codemirror.js"></script>
+  <script src="addon/mode/overlay.js"></script>
+  <script src="mode/meta.js"></script>
+  <script src="mode/gfm/gfm.js"></script>
+  <script src="mode/css/css.js"></script>
+  <script src="mode/php/php.js"></script>
+  <script src="mode/go/go.js"></script>
+  <script src="mode/javascript/javascript.js"></script>
+  <script src="mode/markdown/markdown.js"></script>
+  <script src="mode/xml/xml.js"></script>
+  <script src="mode/clike/clike.js"></script>
+
+</head>
+<body>
+  
+  <div id="app">Test page of markdown-highlighter by codemirror.</div>
+  <textarea id="code" name="textarea" cols="30" rows="10">
+# golang
+
+- try to write 'hello world' script.
+
+```go
+package main 
+import (
+  'fmt'
+)
+func main () {
+  fmt.print('hello world !');
+}
+``` 
+  </textarea>
+
+  <script>
+  var update = function() {
+        console.log("updated!");
+  }
+  var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+      mode: 'gfm',
+      theme: 'icecoder'
+//      lineNumbers: false,
+//      matchBrackets: true,
+//      lineWrapping: true,
+//      theme: 'base16-light'
+  });
+  editor.on('change', update); 
+  </script>
+  <script id="__bs_script__">//<![CDATA[
+  document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.16.0'><\/script>".replace("HOST", location.hostname));
+  //]]></script>
+
+</body>
+</html>
