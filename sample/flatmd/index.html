@@ -7,7 +7,7 @@
 
   <link rel="stylesheet" href="lib/codemirror.css">
   <link rel="stylesheet" href="theme/icecoder.css"> 
-  <link rel="stylesheet" href="mode/composition/codemirror-composition-mod.css"> 
+  <link rel="stylesheet" href="mode/composition-mod/codemirror-composition-mod.css"> 
 
   <style>
   html,body {
@@ -25,12 +25,13 @@
   }
   </style>     
 
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="lib/codemirror.js"></script>
   <script src="addon/mode/overlay.js"></script>
   <script src="mode/gfm/gfm.js"></script>
   <script src="mode/go/go.js"></script>
   <script src="mode/markdown/markdown.js"></script>
-  <script src="mode/composition/codemirror-composition-mod.js"></script>
+  <script src="mode/composition-mod/codemirror-composition-mod.js"></script>
  
   <!--
   <script src="mode/meta.js"></script>
@@ -154,8 +155,10 @@ func main () {
 
   <script>
   var blur = function() {
-        console.log("blur textarea.");
   }          
+  var renderLine = function(cm, line, elem) {
+        console.log("#renderLine ",cm,line,elem);
+  }
   var resize = function(editor) {
     var ih = Number(innerHeight) - 70;
     var obj = getUnits(document.body,'width');
@@ -164,12 +167,14 @@ func main () {
   }
   var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
       mode: 'gfm',
-      theme: 'icecoder',
+  //    theme: 'icecoder',
   //    lineWrapping: true,
       enableCompositionMod: true,
+      debugCompositionMod: true,
       viewportMargin: Infinity
   });
   editor.on('blur', blur);
+  editor.on('renderLine', renderLine);
   window.onresize = function(){resize(editor)};
   resize(editor);
   </script>

@@ -313,7 +313,7 @@ div.CodeMirror-dragcursors {
 }
 
 .CodeMirror-focused div.CodeMirror-cursors {
-  visibility: visible;
+  visibility: visible; 
 }
 
 .CodeMirror-selected { background: #d9d9d9; }
