@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" href="lib/codemirror.css">
   <link rel="stylesheet" href="theme/icecoder.css"> 
+  <link rel="stylesheet" href="mode/composition/codemirror-composition-mod.css"> 
 
   <style>
   html,body {
@@ -29,6 +30,7 @@
   <script src="mode/gfm/gfm.js"></script>
   <script src="mode/go/go.js"></script>
   <script src="mode/markdown/markdown.js"></script>
+  <script src="mode/composition/codemirror-composition-mod.js"></script>
  
   <!--
   <script src="mode/meta.js"></script>
@@ -42,7 +44,7 @@
 <body>
   
   <div id="header" style="height:20px">Test page of markdown-highlighter by codemirror.</div>
-  <textarea id="code">
+<textarea id="code">
 # golang
 
 - try to write 'hello world' script.
@@ -57,7 +59,7 @@ func main () {
   fmt.println('hello world !');
 }
 ```
-  </textarea>
+</textarea>
   <div id="footer" style="height:20px">Test page of markdown-highlighter by codemirror.</div>
   
   <script>
@@ -151,14 +153,9 @@ func main () {
   </script>
 
   <script>
-  var update = function() {
-        console.log("updated!");
-  }
-  var focus = function() {
-    setTimeout(function(){
-        ;
-    }, 200);
-  }
+  var blur = function() {
+        console.log("blur textarea.");
+  }          
   var resize = function(editor) {
     var ih = Number(innerHeight) - 70;
     var obj = getUnits(document.body,'width');
@@ -168,11 +165,11 @@ func main () {
   var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
       mode: 'gfm',
       theme: 'icecoder',
-      lineWrapping: true,
+  //    lineWrapping: true,
+      enableCompositionMod: true,
       viewportMargin: Infinity
   });
-  editor.on('change', update); 
-  editor.on('focus', focus); 
+  editor.on('blur', blur);
   window.onresize = function(){resize(editor)};
   resize(editor);
   </script>
