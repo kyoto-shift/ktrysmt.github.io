@@ -9,8 +9,8 @@ title: About me
 
 ## Experiences
 
-- in English -> [Linkedin](https://www.linkedin.com/in/%E8%80%95%E5%A4%AA%E9%83%8E-%E5%90%89%E6%9D%BE-17813389)
-- in Japanese -> [Wantedly](https://www.wantedly.com/users/18446777)
+- [Wantedly](https://www.wantedly.com/users/18446777) (in Japanese)
+- ~~[Linkedin](https://www.linkedin.com/in/%E8%80%95%E5%A4%AA%E9%83%8E-%E5%90%89%E6%9D%BE-17813389) (in English)~~
 
 ## Products / Main repositories
 
