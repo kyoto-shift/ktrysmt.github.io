@@ -5,29 +5,14 @@ title: About me
 
 {{site.about}}
 
+## Self-introduction
+
 ## Experiences
 
-### Technical Leader
-- <http://www.recruit-sumai.co.jp/>
-- Nov 2015 - Preset
+- in English -> <https://www.linkedin.com/in/%E8%80%95%E5%A4%AA%E9%83%8E-%E5%90%89%E6%9D%BE-17813389>
+- in Japanese -> <https://www.wantedly.com/users/18446777>
 
-### infra Engineer
-- <http://www.recruit-sumai.co.jp/>
-- Nov 2015 - Preset
- 
-### Web Application Engineer
-- <http://www.recruit-sumai.co.jp/>
-- Nov 2015 - Preset
- 
-### Technical Leader
-- <https://www.cybridge.jp/>
-- Apr 2013 - Oct 2015 ( 2 year 6 month )
+## Products / Main repositories
 
-### Engineering Manager
-- <https://www.cybridge.jp/>
-- Apr 2013 - Oct 2015 ( 2 year 6 month )
-
-### Web Application Engineer
-- <https://www.cybridge.jp/>
-- Apr 2011 - Oct 2015 ( 4 year 6 month )
-
+- [Checkup](https://github.com/ktrysmt/checkup)
+- [React Minimal Boilerplate](https://github.com/ktrysmt/react-minimal-boilerplate)
