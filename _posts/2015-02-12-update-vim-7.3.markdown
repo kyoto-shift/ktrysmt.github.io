@@ -1,0 +1,53 @@
+---
+layout: post
+title: "Vimを7.2から7.3にアップデートする"
+date: 2015-02-11
+comments: true
+category: Vim
+tags: Vim CentOS
+published: true
+---
+
+
+
+いつもお世話になってるunite.vimがneobundle updateしたおかげか動かなくなった。
+
+
+`E117: Unknown function: strwidth`
+
+
+こんなエラーが出てunite.vimがうまく動いてくれない。
+
+ヤンクをhistoryしてくれているのが意外と便利だったのが、使えなくなるとそりゃそれで困る。
+
+適当にぐぐってみたら、
+
+<blockquote class="twitter-tweet" lang="ja"><p><a href="https://twitter.com/Gayar0">@Gayar0</a> 現在バージョンチェックが間違っているのでそういうエラーになりますが、unite.vim を使うためには Vim 7.3 以上が必要です。Vim 7.2 以下ではエラーになります。&#10;新しい Vim を使用してください。</p>&mdash; 暗黒美夢王(暗黒美夢女王募集中) (@ShougoMatsu) <a href="https://twitter.com/ShougoMatsu/status/543177864539951104">2014, 12月 11</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+マジか。ということでVimのバージョンアップを試みる。
+
+## install
+
+対象はCentOS6です。
+
+面倒なのでrootで。
+
+```
+yum remove vim
+yum -y install mercurial ncurses-devel make gcc wget
+cd /usr/local/src
+hg clone https://vim.googlecode.com/hg/ vim73
+cd vim73
+./configure --with-features=huge --enable-multibyte --disable-selinux; sudo make; sudo make install
+```
+
+## 追記 Vim7.4対応+αの記事をアップしました。
+
+- [CentOSにVim7.4を入れる](/blog/update-vim-7.4/)
+
+
+## 参考
+
+- [centOS6.3にvim7.3とtmuxをインストール - Qiita](http://qiita.com/soramugi/items/c61f2eeeb414d4844d45)
