@@ -1,6 +1,6 @@
-name: Your New Jekyll Site
-description: Blogging about stuffs
-meta_description: "Your New Jekyll Site, Blogging about stuffs"
+name: "ktrysmt's blog"
+description: "Do well the one thing."
+meta_description: "Do well the one thing."
 
 aboutPage: true
 
@@ -8,17 +8,17 @@ markdown: kramdown
 highlighter: rouge
 
 gems: [jekyll-paginate]
-paginate: 20
+paginate: 9999
 baseurl: /
-domain_name: 'http://yourblog-domain.com'
+domain_name: 'https:///ktrysmt.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
 disqus: false
 disqus_shortname: 'your-disqus-shortname'
 
 # Details for the RSS feed generator
-url:            'http://your-blog-url.example.com'
-author:         'Your Name'
-authorTwitter:  'YourTwitterUsername'
+url:            'https:///ktrysmt.github.io'
+author:         'Kotaro Yoshimatsu'
+authorTwitter:  'ktrysmt'
 
 permalink:       /:title/
 
