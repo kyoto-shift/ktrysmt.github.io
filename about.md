@@ -5,18 +5,22 @@ layout: page
 profile: true
 ---
 
-# About Kotaro Yoshimatsu
-I am a web developer, born and live in Japan.  
+I am a japanese web developer, and live in Japan.  
 I'm interested in Javascript, Golang, Vim, AWS, and Docker.
 
 My Skills for web development are (below);
+
 - As a `Tech Lead`
   - Collect Issue and postulate and build up teams to focus shipment at bootstrap or enhancement.
   - Prevent engineers from overload about tasks or business requirements, instead consider or design another means to solve it.
+
 - As a `Frontend Engineer`
 
+
 # Education
-- I'm graduated Toyo university in Mar 2011. 
+
+- B.A. Sociology, Toyo university in 2011. 
+
 
 # Work Experiences
 
