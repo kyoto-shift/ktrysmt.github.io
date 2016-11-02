@@ -1,7 +1,7 @@
 ---
 title: About me
 permalink: /about/
-profile: false
+profile: true
 ---
 
 I am a japanese web developer, and live in Japan.  
