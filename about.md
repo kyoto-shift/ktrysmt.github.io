@@ -10,11 +10,22 @@ I'm interested in Javascript, Golang, Vim, AWS, and Docker.
 
 My Skills for web development are (below);
 
-- As a `Tech Lead`
-  - Collect Issue and postulate and build up teams to focus shipment at bootstrap or enhancement.
-  - Prevent engineers from overload about tasks or business requirements, instead consider or design another means to solve it.
+### As a `Tech Lead`
 
-- As a `Frontend Engineer`
+- Collect Issue and postulate and build up teams to focus shipment at bootstrap or enhancement.
+- Prevent engineers from overload about tasks or business requirements, instead consider or design another means to solve it.
+
+### As a `Engineer`
+
+- Use NodeJS, Babel(for es2015,2016), Webpack, several HTML5APIs, jQuery and VDOM Frameworks(React, VueJS, Mithril). 
+- Use Golang to create CLI tools, build webserver for RestfulAPI by Gin, Echo, or naked net/http.
+- Designing around systems to use IaaS like AWS, and select some tools for orchestration to Terraform, Packer, and Docker. 
+
+### As a `Manager`
+
+- I have a `Certificated Scrum Master License` in 2016. As a scrum master, build up a team to focus a product or KPIs. 
+- Also have a `Certificated Scrum Product Owner License` in 2016. 
+- I worked as a Program Manager in the small team, manage eight or ten engineers to support themselves and their projects. 
 
 
 # Education
