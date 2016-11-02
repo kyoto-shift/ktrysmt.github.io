@@ -44,6 +44,6 @@ A minimal boilerplate to use ReactJS, Babel, Webpack, ESlint, Browser-Sync and o
 
 ## [Quick Custom GSearch](https://github.com/ktrysmt/quick-custom-gsearch)
 
-<!-- # Blog posts -->
-<!-- {% include post-list-short.html %} -->
-<!-- {% include footer.html %} -->
+# Blog posts
+{% include post-list-short.html %}
+{% include footer.html %}
