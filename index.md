@@ -1,6 +1,7 @@
 ---
 title: About me
 permalink: /
+layout: page
 profile: true
 ---
 
