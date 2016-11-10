@@ -38,10 +38,21 @@ My Skills for web development are below;
 ## Summary
 
 ### 2015 - Present, Recruit Sumai Company Ltd.
-[Recruit Sumai Company](http://www.recruit-sumai.co.jp/) 
+[Recruit Sumai Company](http://www.recruit-sumai.co.jp/) provides matching sites for Real Estate Industry.
+I work for some sites and projects as a Tech Lead. Also I manage about an architecture from Frontend to Backend and Infrastructure each of those.
 
 ### 2011 - 2015, Cybridge inc.
-[Cybridge](https://www.cybridge.jp/)
+[Cybridge](https://www.cybridge.jp/) create some systems or sites for their business clients by one-stop.
+I worked as an Engineer or Manager to ship systems with every effort.
+I built some systems base of LAMP, below;
+- Some EC sites
+- A real estate matching site (CtoC)
+- A API server for a smartphone app. 
+- Some Scratched-CMSs for many clients, etc...
+And I managed some Engineers or Designers for their developer-productivity as Engineering Manager or Support Engineer or Infra Engineer.
+- Support to use Svn/Git
+- Maintenance owned onpremise servers
+- Bringing in Jenkins for CI/CD to some projects
 
 ## More Informations
 
@@ -58,5 +69,7 @@ You can write test code as YAML format easily and right well.
 A minimal boilerplate to use ReactJS, Babel, Webpack, ESlint, Browser-Sync and other.
 
 ## [Quick Custom GSearch](https://github.com/ktrysmt/quick-custom-gsearch)
+
+## [go-bitbucket](https://github.com/ktrysmt/go-bitbucket)
 
 {% include footer.html %}
