@@ -6,7 +6,7 @@ profile: true
 ---
 
 I am a Japanese web developer and live in Japan.
-I’m interested in Javascript, Golang, Vim, AWS, and Docker.
+I'm interested in Javascript, Golang, Vim, AWS, and Docker.
 
 My Skills for web development are below;
 
@@ -46,13 +46,17 @@ I work for some sites and projects as a Tech Lead. Also I manage about an archit
 I worked as an Engineer or Manager to ship systems with every effort.
 I built some systems base of LAMP, below;
 - Some EC sites
-- A real estate matching site (CtoC)
+- A real estate matching site 
 - A API server for a smartphone app. 
 - Some Scratched-CMSs for many clients, etc...
 And I managed some Engineers or Designers for their developer-productivity as Engineering Manager or Support Engineer or Infra Engineer.
 - Support to use Svn/Git
 - Maintenance owned onpremise servers
 - Bringing in Jenkins for CI/CD to some projects
+Experienced skill sets are;
+- CentOS/Ubuntu, Ansible, Docker
+- MySQL, Postgres, Apache, Nginx, Postfix
+- PHP, Javascript
 
 ## More Informations
 
@@ -62,14 +66,13 @@ And I managed some Engineers or Designers for their developer-productivity as En
 # Personal Products 
 
 ## [Checkup](https://github.com/ktrysmt/checkup)
-A E2E testing framework.  
+A E2E testing framework.   
 You can write test code as YAML format easily and right well.
 
 ## [React Minimal Boilerplate](https://github.com/ktrysmt/react-minimal-boilerplate) 
 A minimal boilerplate to use ReactJS, Babel, Webpack, ESlint, Browser-Sync and other.
 
 ## [Quick Custom GSearch](https://github.com/ktrysmt/quick-custom-gsearch)
-
-## [go-bitbucket](https://github.com/ktrysmt/go-bitbucket)
+It's a Chrome Extension. Quick change searching period in Google. 
 
 {% include footer.html %}
