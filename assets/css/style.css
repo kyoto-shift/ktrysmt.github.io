@@ -71,7 +71,7 @@ header h1 {
   margin-bottom: 30px;
 }
 
-header h2 {
+header h2.headline {
   border-bottom:none;
 }
 
@@ -252,7 +252,7 @@ em, i { font-style: italic; }
   letter-spacing: -1px;
   color: #666;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 1px dashed #666;
 }
