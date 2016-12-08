@@ -187,7 +187,7 @@ ul 	{
  margin:0;
  padding:0;
  margin-bottom: 10px;
- padding-left: 10px;
+ padding-left: 20px;
 }
 li	{
   margin-left: 10px;
@@ -222,14 +222,12 @@ em, i { font-style: italic; }
 	color: #aaa;
 }
 
-
-
 .home h1 {
 	font-size: 30px;
 	letter-spacing: -1px;
 	color: #222;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -285,7 +283,7 @@ em, i { font-style: italic; }
 
 h3, h4, h5 { color:#333; }
 
-h3 { font-size:20px; font-weight: 400; }
+h3 { font-size:20px; font-weight: 400; margin-bottom: 10px; }
 h4 { font-size:16px; font-weight:bold; }
 h5 { font-size:15px; font-weight: bold; }
 
