@@ -5,6 +5,8 @@ layout: page
 profile: true
 ---
 
+## Summary
+
 I am a Japanese web developer and live in Japan.
 I'm interested in Javascript, Golang, Vim, AWS, and Docker.
 
@@ -34,8 +36,6 @@ My Skills for web development are below;
 
 
 # Work Experiences
-
-## Summary
 
 ### 2015 - Present, Recruit Sumai Company Ltd.
 [Recruit Sumai Company](http://www.recruit-sumai.co.jp/) provides matching sites for Real Estate Industry.
