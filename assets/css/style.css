@@ -71,6 +71,10 @@ header h1 {
   margin-bottom: 30px;
 }
 
+header h2 {
+  border-bottom:none;
+}
+
 h2 {
 	/* font: italic 19px/1.3em Georgia,serif; */
 	/* color: #bbb; */
@@ -173,6 +177,10 @@ a,
 	text-decoration: none;
 	color: #5badf0;
 	color: #5694f1;
+}
+
+.home a:hover {
+  color: #666;
 }
 
 p a { color: #5694f1; }
