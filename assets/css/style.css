@@ -181,7 +181,7 @@ a,
 }
 
 .home a:hover {
-  color: #666;
+  color: #333;
 }
 
 p a { color: #5694f1; }
@@ -255,7 +255,7 @@ em, i { font-style: italic; }
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px dashed #666;
+  border-bottom: 1px solid #eee;
 }
 
 .post header {
