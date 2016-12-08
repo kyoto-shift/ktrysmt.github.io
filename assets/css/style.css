@@ -152,7 +152,7 @@ nav.main-nav a.cta {
 #wrapper {
   max-width: 800px;
   margin: 0 auto;
-  padding: 60px 40px 100px 40px;
+  padding: 60px 40px 10px 40px;
 }
 
 #wrapper.home {
@@ -323,7 +323,10 @@ p.small {
 	color: #bbb;
 	font-size: 14px;
 	line-height: 1.5;
-	display: block;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
 }
 
 blockquote {
