@@ -184,7 +184,7 @@ a,
 	transition: all 0.15s ease;
 }
 
-ul 	{ margin:0; padding:0; }
+ul 	{ margin:0; padding:0; margin-bottom: 20px; }
 li	{ list-style-type:circle; list-style-position:inside; }
 
 /* Line Height */
@@ -224,9 +224,15 @@ em, i { font-style: italic; }
 }
 
 .home h2 {
-	font: Georgia,serif;
-  color: #000;
-  font-size: 24px;
+	/* font: Georgia,serif; */
+  /* color: #000; */
+  /* font-size: 24px; */
+  font-size: 30px;
+  letter-spacing: -1px;
+  color: #222;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .post header {
