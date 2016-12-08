@@ -186,7 +186,7 @@ a,
 ul 	{ 
  margin:0;
  padding:0;
- margin-bottom: 20px;
+ margin-bottom: 10px;
  padding-left: 10px;
 }
 li	{
@@ -198,6 +198,9 @@ li	{
 #post-body, p { 
   /* text-align: justify; */
   line-height:1.7; 
+}
+.home p {
+  margin-bottom: 10px;
 }
 
 b, strong { font-weight: 500;
