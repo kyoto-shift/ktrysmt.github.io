@@ -62,7 +62,7 @@ body {
 h1 {
 	font-size: 30px;
 	letter-spacing: -1px;
-	color: #666;
+	color: #222;
 	font-weight: bold;
 }
 
@@ -78,6 +78,7 @@ header h2.headline {
 h2 {
 	/* font: italic 19px/1.3em Georgia,serif; */
 	/* color: #bbb; */
+  color: #333;
 }
 
 .profile #wrapper {
@@ -295,7 +296,7 @@ em, i { font-style: italic; }
 	margin-top: 2px;
 }
 
-h3, h4, h5 { color:#666; }
+h3, h4, h5 { color:#333; }
 
 h3 {
   margin-bottom: 10px;
