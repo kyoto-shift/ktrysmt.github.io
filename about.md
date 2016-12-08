@@ -45,15 +45,20 @@ I work for some sites and projects as a Tech Lead. Also I manage about an archit
 [Cybridge](https://www.cybridge.jp/) create some systems or sites for their business clients by one-stop.
 I worked as an Engineer or Manager to ship systems with every effort.
 I built some systems base of LAMP, below;
+
 - Some EC sites
 - A real estate matching site 
 - A API server for a smartphone app. 
 - Some Scratched-CMSs for many clients, etc...
+
 And I managed some Engineers or Designers for their developer-productivity as Engineering Manager or Support Engineer or Infra Engineer.
+
 - Support to use Svn/Git
 - Maintenance owned onpremise servers
 - Bringing in Jenkins for CI/CD to some projects
+
 Experienced skill sets are;
+
 - CentOS/Ubuntu, Ansible, Docker
 - MySQL, Postgres, Apache, Nginx, Postfix
 - PHP, Javascript
