@@ -1,8 +1,8 @@
 ## Deep Dive Vim Command Mode
 
-2016/12/15  
+Kotaro Yoshimatsu 
 Recruit Sumai Company Ltd.  
-@ktrysmt 
+12/15 2016  
 
 ---
 
@@ -130,6 +130,17 @@ Footnote; Visual mode or Operator required.
 
 - Focus on Operator and Text Object
 - Learn a combination easy-to-use 
+
+
+---
+
+
+## thank you for your attention
+
+#### Contact
+
+- <https://twitter.com/ktrysmt>
+- <https://github.com/ktrysmt>
 
 
 
