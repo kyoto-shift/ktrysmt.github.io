@@ -9,8 +9,12 @@ Recruit Sumai Company Ltd.
 
 ## Whois
  
+Kotaro Yoshimatsu / age 30
+
 - <https://twitter.com/ktrysmt>
 - <https://github.com/ktrysmt>
+
+a.k.a JSおじさん, or Vimおじさん
  
 ---
 

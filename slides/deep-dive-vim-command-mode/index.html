@@ -24,7 +24,7 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-        <section data-markdown="./content.md"
+        <section data-markdown="./content.md" @data-background="#002b36" 
                  data-separator="\n---\n$"
                  data-separator-vertical="\n--\n">
           <script type="text/template"></script>
@@ -37,8 +37,12 @@
 
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+      Reveal.initialize({
+        history: true,
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
