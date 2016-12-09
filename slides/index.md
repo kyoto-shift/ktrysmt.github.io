@@ -5,9 +5,9 @@ layout: page
 profile: true
 ---
 
-# My Slides
-
 - [DEEP DIVE VIM COMMAND MODE](./deep-dive-vim-command-mode/)
+
+<iframe src="./deep-dive-vim-command-mode/"></iframe>
 
 {% include footer.html %}
 
