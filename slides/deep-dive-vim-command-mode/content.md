@@ -14,7 +14,7 @@ Kotaro Yoshimatsu / age 30
 - <https://twitter.com/ktrysmt>
 - <https://github.com/ktrysmt>
 
-a.k.a JSおじさん, or Vimおじさん
+a.k.a JSおじさん, or Vimおじさん :innocent:
  
 ---
 
