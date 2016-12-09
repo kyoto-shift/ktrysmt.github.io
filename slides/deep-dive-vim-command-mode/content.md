@@ -1,9 +1,17 @@
 ## Deep Dive Vim Command Mode
 
 Kotaro Yoshimatsu   
+
 Recruit Sumai Company Ltd.    
 12/15 2016  
 
+---
+
+## Whois
+ 
+- <https://twitter.com/ktrysmt>
+- <https://github.com/ktrysmt>
+ 
 ---
 
 ## Command Mode maked up by two facts
@@ -137,10 +145,11 @@ Footnote; Visual mode or Operator required.
 
 ## thank you for your attention
 
-#### Contact
+### References
 
-- <https://twitter.com/ktrysmt>
-- <https://github.com/ktrysmt>
+- [Vim のテキスト編集 〜基礎編〜 \- Vim のブログ](http://vimblog.hatenablog.com/entry/vim_edit_basic)
+- [Vimのオペレーターとモーションについて ‹ 技術の犬小屋](http://promamo.com/?p=1968)
+- [Vim のモーションについて \- Qiita](http://qiita.com/b4b4r07/items/7fc12842d03e7e46412c)
 
 
 

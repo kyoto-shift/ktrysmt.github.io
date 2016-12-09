@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start":"simplehttpserver ./slides/"
+  },
+  "dependencies": {
+    "simplehttpserver": "^0.0.6"
+  }
+}
