@@ -5,10 +5,8 @@ layout: page
 profile: true
 ---
 
-I am a Japanese web developer and live in Japan.
+I am a Japanese web developer and live in Japan.  
 I'm interested in Javascript, Golang, Vim, AWS, and Docker.
-
-My Skills for web development are below;
 
 # Education
 
