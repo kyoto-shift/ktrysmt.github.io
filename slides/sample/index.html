@@ -46,13 +46,18 @@
         history: true,
         center: true,
         fragments: true,
+        transition: 'convex',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: '../assets/plugin/markdown/marked.js' },
 					{ src: '../assets/plugin/markdown/markdown.js' },
 					{ src: '../assets/plugin/notes/notes.js', async: true },
-          { src: '../assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); emojify.setConfig({img_dir:'/assets/images/emoji'}); emojify.run(); } }
+          { src: '../assets/plugin/highlight/highlight.js', async: true, callback: function() { 
+            hljs.initHighlightingOnLoad(); 
+            emojify.setConfig({img_dir:'https://cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/images/basic'});
+            emojify.run(); }
+          } 
 				]
 			});
 		</script>

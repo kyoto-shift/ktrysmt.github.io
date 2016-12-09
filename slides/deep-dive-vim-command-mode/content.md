@@ -7,7 +7,7 @@ Recruit Sumai Company Ltd.
 
 ---
 
-## Whois
+## Whois :racehorse:
  
 Kotaro Yoshimatsu / age 30
 
