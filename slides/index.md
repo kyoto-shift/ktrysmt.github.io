@@ -1,7 +1,7 @@
 ---
 title: My Slides
 permalink: /slides/
-layout: page
+layout: slide
 profile: true
 ---
 
