@@ -1,6 +1,6 @@
 # ktrysmt's blog 
 
-A Personal Tech Blog by ktrysmt.
+[A Personal Tech Blog](http://ktrysmt.github.io/) by ktrysmt.
 
 ## Author
 
