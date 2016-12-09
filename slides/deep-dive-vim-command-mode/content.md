@@ -1,6 +1,6 @@
 ## Deep Dive Vim Command Mode
 
-Kotaro Yoshimatsu 
+Kotaro Yoshimatsu   
 Recruit Sumai Company Ltd.  
 12/15 2016  
 
