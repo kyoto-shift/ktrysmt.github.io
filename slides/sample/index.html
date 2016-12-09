@@ -11,6 +11,8 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="../assets/lib/css/zenburn.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/css/basic/emojify.min.css" />
+		<link rel="stylesheet" href="../assets/css/style.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -34,7 +36,7 @@
 
 		<script src="../assets/lib/js/head.min.js"></script>
 		<script src="../assets/js/reveal.js"></script>
-
+    <script src="//cdnjs.cloudflare.com/ajax/libs/emojify.js/1.1.0/js/emojify.min.js"></script>
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
@@ -50,7 +52,7 @@
 					{ src: '../assets/plugin/markdown/marked.js' },
 					{ src: '../assets/plugin/markdown/markdown.js' },
 					{ src: '../assets/plugin/notes/notes.js', async: true },
-					{ src: '../assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          { src: '../assets/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); emojify.setConfig({img_dir:'/assets/images/emoji'}); emojify.run(); } }
 				]
 			});
 		</script>
