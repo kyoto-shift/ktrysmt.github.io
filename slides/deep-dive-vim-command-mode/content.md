@@ -134,7 +134,7 @@ Footnote; Visual mode or Operator required.
 |---|---|
 |yiw| Yank a word (exclude whitespace) |
 |ya"| Yank words enclosed in doublequotes (include quotes) |
-|d5j| Delete Five rows |
+|d5j| Delete the Lower five rows |
 
 ---
 
