@@ -19,8 +19,8 @@ paginate: 9999
 baseurl: /
 domain_name: 'https:///ktrysmt.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
-disqus: false
-disqus_shortname: 'your-disqus-shortname'
+disqus: true
+disqus_shortname: 'syskit'
 
 # Details for the RSS feed generator
 url:            'https:///ktrysmt.github.io'
