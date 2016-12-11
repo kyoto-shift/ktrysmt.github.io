@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "$B2hLLA+0\$NBN46B.EY$r%5%/%C$H2~A1$9$k(BInstantClick"
+title: "画面遷移の体感速度をサクッと改善するInstantClick"
 date: 2016-12-11 15:09:08 +0900
 comments: true
 category: Javascript
@@ -15,5 +15,5 @@ published: true
 <script data-no-instant>InstantClick.init(50);</script>
 ```
 
-$B$3$l$r(B`</body>`$BD>A0$J$I$KF~$l9~$`$@$1!#@EE*%5%$%H$K$OFC$K8~$$$F$k!#BN46B.EY$,>e$,$C$F%*%9%9%a!#(B
+これを`</body>`直前などに入れ込むだけ。静的サイトには特に向いてる。体感速度が上がってオススメ。
 
