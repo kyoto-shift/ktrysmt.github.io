@@ -357,10 +357,11 @@ code {
 }
 
 p > code.highlighter-rouge {
-  padding: 2px 4px;
+  padding: 3px 4px 2px;
+  margin: 0 3px;
   background-color: #272b2d;
   border-radius: 3px;
-  font-size: 13px;
+  font-size: 12px;
   color: #c1ef65;
   line-height: 1.5em;
   font-weight: 500;
