@@ -9,11 +9,11 @@ published: true
 ---
 
 
+
 ```
 <script src="//cdn.jsdelivr.net/instantclick/3.0.1/instantclick.min.js" data-no-instant></script>
 <script data-no-instant>InstantClick.init(50);</script>
 ```
-
 
 これを`</body>`直前などに入れ込むだけ。静的サイトには特に向いてる。体感速度が上がってオススメ。
 
