@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "なぜ、イスラエル企業を欲しがるのか？(2) - 'How Strategic Innovation'"
-date: 2015-02-01
+date: 2015-02-01 15:09:08 +0900
 comments: true
 category: BookReview
 tags: BookReview

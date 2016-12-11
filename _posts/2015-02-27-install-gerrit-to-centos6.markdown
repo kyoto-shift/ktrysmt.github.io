@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CentOS6にGerritをインストール"
-date: 2015-02-27
+date: 2015-02-27 15:09:08 +0900
 comments: true
 category: Git
 tags: Git Gerrit

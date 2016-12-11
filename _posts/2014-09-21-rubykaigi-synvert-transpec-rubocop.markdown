@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rubykaigiで話題のあれそれ"
-date: 2014-09-20 10:00:24 +0000
+date: 2014-09-20 15:09:08 +0900
 comments: true
 category: Ruby
 tags: Ruby

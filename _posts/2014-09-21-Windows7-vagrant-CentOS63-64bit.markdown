@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Windows7上にVagrantでCentOS6.3 64bit環境を構築する"
-date: 2014-02-01 10:00:24 +0000
+date: 2014-02-01 15:09:08 +0900
 comments: true
 category: Vagrant
 tags: Vagrant CentOS Windows

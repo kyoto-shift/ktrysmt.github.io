@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "WindowsのGit BashでMinGWを使う"
-date: 2015-04-08
+date: 2015-04-08 15:09:08 +0900 
 comments: true
 category: Windows
 tags: MinGW Git

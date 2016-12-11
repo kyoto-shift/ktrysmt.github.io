@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "rvmをやめてrbenvでRuby"
-date: 2014-07-22 10:00:00 +0000
+date: 2014-07-22 15:09:08 +0900
 comments: true
 category: Ruby
 tags: Ruby rbenv ruby-build

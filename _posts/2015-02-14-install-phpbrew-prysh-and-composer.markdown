@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PHPもお洒落になったもんだなー"
-date: 2015-02-14
+date: 2015-02-14 15:09:08 +0900
 comments: true
 category: PHP
 tags: PHP CentOS Composer

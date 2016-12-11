@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[CentOS] oh-my-zshが重いのでpreztoをインストールする"
-date: 2014-09-23 09:00:24 +0000
+date: 2014-09-23 15:09:08 +0900
 comments: true
 category: Zsh
 tags: Zsh Prezto

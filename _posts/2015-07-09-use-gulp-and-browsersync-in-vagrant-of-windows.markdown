@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Vagrantでgulp+BrowserSyncを使いライブリロード"
-date: 2015-06-27
+date: 2015-06-27 15:09:08 +0900 
 comments: true
 category: Node
 tags: Vagrant Gulp Node

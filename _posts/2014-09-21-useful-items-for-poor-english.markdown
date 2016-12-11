@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "開発に欠かせない英語翻訳ツールの設定"
-date: 2014-09-21 20:00:24 +0000
+date: 2014-09-21 15:09:08 +0900
 comments: true
 category: Translate
 tags: Translate English Chrome Windows

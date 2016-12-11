@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Git] git/hooks/post-commitで、commitしたら自動でリモートにPushする"
-date: 2014-10-01 23:35:24 +0000
+date: 2014-10-01 15:09:08 +0900
 comments: true
 category: Git
 tags: Git Bitbucket

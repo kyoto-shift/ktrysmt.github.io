@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to fix syntastic not working with eslint"
-date: 2016-09-21
+date: 2016-09-21 15:09:08 +0900 
 comments: true
 category: Vim
 tags: Vim

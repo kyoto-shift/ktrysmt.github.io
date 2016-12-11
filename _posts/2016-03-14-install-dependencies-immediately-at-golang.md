@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Goで依存パッケージをとりあえずまとめてインストールしちまいたい"
-date: 2016-03-14
+date: 2016-03-14 15:09:08 +0900 
 comments: true
 category: Golang
 tags: Golang

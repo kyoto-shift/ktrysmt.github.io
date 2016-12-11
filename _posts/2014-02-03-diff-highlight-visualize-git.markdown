@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "gitのdiffを見やすくするdiff-highlight"
-date: 2014-02-01 22:08:00 +0000
+date: 2014-02-01 15:09:08 +0900 
 comments: true
 category: Git
 tags: Bash Git  

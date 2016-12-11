@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Docker Meetup Tokyo #4 まとめ"
-date: 2015-01-17
+date: 2015-01-17 15:09:08 +0900
 comments: true
 category: Docker
 tags: Docker

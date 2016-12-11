@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CentOSにtigをインストール"
-date: 2014-05-24 12:48:21 +0000
+date: 2014-05-24 15:09:08 +0900
 comments: true
 category: Git
 tags: Git CentOS tig

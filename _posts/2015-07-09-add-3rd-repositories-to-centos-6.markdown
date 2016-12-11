@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "add 3rd repositories to centos 6"
-date: 2015-06-29
+date: 2015-06-29 15:09:08 +0900 
 comments: true
 category: CentOS
 tags: CentOS Yum Linux

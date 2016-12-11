@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[CentOS] PHP 5.3を5.5にバージョンアップ"
-date: 2014-09-20 20:00:24 +0000
+date: 2014-09-20 15:09:08 +0900
 comments: true
 category: PHP
 tags: PHP CentOS yum

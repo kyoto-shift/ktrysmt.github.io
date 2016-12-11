@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "開発のすすめかたテンプレ"
-date: 2014-09-20 14:00:24 +0000
+date: 2014-09-20 15:09:08 +0900
 comments: true
 category: Development
 tags: Development

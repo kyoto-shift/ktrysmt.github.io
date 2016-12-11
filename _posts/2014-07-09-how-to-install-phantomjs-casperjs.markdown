@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CentOS6にphantomjs+casperjs+IPAフォントをインストール"
-date: 2014-05-24 12:48:21 +0000
+date: 2014-05-24 15:09:08 +0900
 comments: true
 category: Node
 tags: CasperJS PhantomJS Node Javascript

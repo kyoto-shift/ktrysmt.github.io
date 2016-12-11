@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "suggest.jsで入力・選択後callback関数を呼ぶ"
-date: 2014-09-21 10:00:24 +0000
+date: 2014-09-21 15:09:08 +0900
 comments: true
 category: Javascript
 tags: Javascript

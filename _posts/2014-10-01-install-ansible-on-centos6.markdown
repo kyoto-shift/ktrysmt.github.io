@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CentOS6でAnsibleを使う"
-date: 2014-10-02 1:00:24 +0000
+date: 2014-10-02 15:09:08 +0900
 comments: true
 category: Ansible
 tags: CentOS Ansible

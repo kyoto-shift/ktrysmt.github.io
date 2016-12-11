@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ".minttyrcを編集してCygwinのカラースキーマを変更する"
-date: 2014-09-27 1:00:24 +0000
+date: 2014-09-27 15:09:08 +0900
 comments: true
 category: Cygwin
 tags: Cygwin Vim Windows

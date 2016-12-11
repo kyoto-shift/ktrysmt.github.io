@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "なぜ、イスラエル企業を欲しがるのか？(1) - 'Israels economic miracle'"
-date: 2015-01-15 01:00:00
+date: 2015-01-15 15:09:08 +0900
 comments: true
 category: BookReview
 tags: BookReview

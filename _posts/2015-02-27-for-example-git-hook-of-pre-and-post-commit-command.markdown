@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "よく使う.git/hook"
-date: 2015-02-25
+date: 2015-02-25 15:09:08 +0900
 comments: true
 category: Git
 tags: Git Shell Linux Bash

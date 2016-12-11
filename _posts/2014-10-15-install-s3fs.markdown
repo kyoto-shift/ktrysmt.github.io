@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "s3fsをインストールする"
-date: 2014-10-18 1:00:24 +0000
+date: 2014-10-18 15:09:08 +0900
 comments: true
 category: AWS
 tags: AWS yum S3 Linux

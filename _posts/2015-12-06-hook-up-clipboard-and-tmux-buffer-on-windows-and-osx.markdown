@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "(Windows|OSX)でtmuxのコピーバッファをクリップボードに送る"
-date: 2015-12-06
+date: 2015-12-06 15:09:08 +0900 
 comments: true
 category: Tmux
 tags: TmuxWindowsOSX
