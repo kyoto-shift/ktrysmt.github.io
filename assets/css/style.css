@@ -716,6 +716,16 @@ h2.month {
 	.post h2 { font-size:20px; }
 }
 
+/* disqus */
+.disqus {
+  margin-bottom: 40px;
+  border-bottom: solid 1px #eee;
+}
+#disqus_thread iframe {
+  padding-bottom: 90px;
+  position: relative;
+}
+
 /* iframe */
 .iframe-wrapper {
   position: relative;
