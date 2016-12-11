@@ -356,6 +356,17 @@ code {
   white-space: pre;
 }
 
+p > code.highlighter-rouge {
+  padding: 2px 4px;
+  background-color: #272b2d;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #c1ef65;
+  line-height: 1.5em;
+  font-weight: 500;
+  font-family: "Source Code Pro", Menlo, monospace;
+}
+
 span.code { font-family:Menlo, Monaco, Courier; background-color:#EEE; font-size:14px; }
 
 pre	{
