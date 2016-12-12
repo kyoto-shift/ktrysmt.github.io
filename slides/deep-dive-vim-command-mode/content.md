@@ -7,7 +7,7 @@ Recruit Sumai Company Ltd.
 
 ---
 
-## Whois :racehorse:
+## Whois
  
 Kotaro Yoshimatsu / age 30
 
@@ -16,6 +16,56 @@ Kotaro Yoshimatsu / age 30
 
 a.k.a JSおじさん, or Vimおじさん :innocent:
  
+---
+
+## Scope
+
+### target
+
+Who understand basic operations
+
+--
+
+### In Scope
+
+- Understand combined KEY in Command Mode
+
+--
+
+### Out of Scope
+
+- Hacking .vimrc
+- Explain basic operation and behavior
+- Introduction of plugins
+
+---
+
+## Command Mode ?
+
+Also named Normal Mode
+
+--
+
+Can you understand this ?
+
+--
+
+yis
+
+:open_mouth:
+
+--
+
+yf3e
+
+:sleepy:
+
+--
+
+{c5}
+
+:innocent:
+
 ---
 
 ## Command Mode maked up by two facts
