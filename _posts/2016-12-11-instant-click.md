@@ -9,8 +9,6 @@ published: true
 ---
 
 
-このブログでも一部に適用しているのだけれど、
-
 ```
 <script src="//cdn.jsdelivr.net/instantclick/3.0.1/instantclick.min.js" data-no-instant></script>
 <script data-no-instant>InstantClick.init(50);</script>
