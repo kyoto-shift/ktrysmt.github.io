@@ -34,9 +34,9 @@ Who understand basic operations
 
 ### Out of Scope
 
-- Hacking .vimrc
+- Hack of .vimrc
 - Explain basic operation and behavior
-- Introduction of plugins
+- List plugins
 
 ---
 
