@@ -7,20 +7,20 @@ Recruit Sumai Company Ltd.
 
 ---
 
-## Whois
+## Whoami
  
 Kotaro Yoshimatsu / age 30
 
 - <https://twitter.com/ktrysmt>
 - <https://github.com/ktrysmt>
 
-a.k.a JSおじさん, or Vimおじさん :innocent:
+a.k.a Vimおじさん :innocent:
  
 ---
 
 ## Scope
 
-### target
+### Target
 
 Who understand basic operations
 
