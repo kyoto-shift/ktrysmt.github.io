@@ -1,8 +1,7 @@
 ## Deep Dive Vim Command Mode
 
-Kotaro Yoshimatsu   
+Kotaro Yoshimatsu 
 
-Recruit Sumai Company Ltd.    
 12/15 2016  
 
 ---
@@ -13,6 +12,7 @@ Kotaro Yoshimatsu / age 30
 
 - <https://twitter.com/ktrysmt>
 - <https://github.com/ktrysmt>
+- kotaro.yoshimatsu@gmail.com
 
 a.k.a Vimおじさん :innocent:
  
