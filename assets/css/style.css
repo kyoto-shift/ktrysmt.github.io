@@ -196,6 +196,12 @@ a,
 	-o-transition: all 0.15s ease;
 	transition: all 0.15s ease;
 }
+ul#post-list {
+ padding-left: 0px;
+}
+li#post-list {
+  margin-left: 0px;
+}
 
 ul 	{ 
  margin:0;
