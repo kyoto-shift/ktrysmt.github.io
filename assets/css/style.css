@@ -460,8 +460,10 @@ img {
 /*=========================================
 Post List
 =========================================== */
-#post-list,.archive-list {
+#post-list, .archive-list {
   margin-top: 60px;
+  padding-left: 0px;
+  margin-bottom: 60px;
 }
 
 #post-list li,.archive-list li {
@@ -648,6 +650,16 @@ h2.month {
 
 .archive-list li:last-child {
 	margin-bottom: 0;
+}
+
+.archive-list li {
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+.archive-list li+li {
+    padding-top: 20px;
+    border-top: 1px solid #eee;
 }
 
 .archive-list a {
