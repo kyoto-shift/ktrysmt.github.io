@@ -264,7 +264,7 @@ em, i { font-style: italic; }
   border-bottom: 1px solid #eee;
 }
 
-.home .link-blog {
+.home .readmore {
   display: flex;
   margin-top: 40px;
   justify-content: center;

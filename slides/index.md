@@ -5,8 +5,8 @@ layout: page
 profile: true
 ---
 
-### [DEEP DIVE VIM COMMAND MODE](./deep-dive-vim-command-mode/)
-<div class="iframe-wrapper"><iframe src="./deep-dive-vim-command-mode/"></iframe></div>
+:q
+{% include slide.html %}
 
 {% include footer.html %}
 
