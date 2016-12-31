@@ -8,7 +8,9 @@ profile: true
 {% for page in site.pages %}
 <ul>
   <li>
+ <a href="{{ site.baseurl }}{{ page.url | remove_first: '/' }}">
    {{ page.title }} - {{ page.date }}
+ </a>
   </li>
 </ul>
 {% endfor %}
