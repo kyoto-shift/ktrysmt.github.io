@@ -48,3 +48,8 @@ defaults:
     values:
       permalink: /page/:title/
       layout: default
+
+
+collections:
+  pages:
+    output: true

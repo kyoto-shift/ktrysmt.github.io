@@ -5,6 +5,14 @@ profile: true
 
 <h1>Pages</h1>
 
+{% for page in site.pages %}
+<ul>
+  <li>
+   {{ page.title }} - {{ page.date }}
+  </li>
+</ul>
+{% endfor %}
+
 <h1>Blog Posts</h1>
 
 {% include post-list.html %}
