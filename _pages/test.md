@@ -1,5 +1,5 @@
 ---
-title: "Golang $B$^$H$a(B"
+title: "Golang まとめ"
 date: 2016-12-31
 ---
 
