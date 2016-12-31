@@ -1,5 +1,5 @@
 ---
-title: My Slides
+title: Slides
 permalink: /slides/
 layout: page
 profile: true
