@@ -1,6 +1,6 @@
 ---
 title: About me
-permalink: /about/
+permalink: /about-en/
 layout: page
 profile: true
 ---
@@ -77,7 +77,6 @@ It's a Chrome Extension. Quick change searching period in Google.
 
 ## Links
 
-[In English](/about-en/)
+[In Japanese](/about/)
 
 {% include footer.html %}
-
