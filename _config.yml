@@ -1,6 +1,6 @@
 name: "ktrysmt's blog"
-description: "Do well the one thing."
-meta_description: "Do well the one thing."
+description: "ソフトウェアエンジニア兼マネージャをやってるひとのブログです"
+meta_description: "ソフトウェアエンジニア兼マネージャをやってるひとのブログです"
 
 aboutPage: true
 
@@ -17,13 +17,11 @@ google_analytics: 'UA-XXXXXXXX-X'
 disqus: true
 disqus_shortname: 'syskit'
 
-# Details for the RSS feed generator
 url:            'https:///ktrysmt.github.io'
 author:         'Kotaro Yoshimatsu'
 authorTwitter:  'ktrysmt'
 
-permalink:       /:title/
-
+permalink:       /blog/:title/
 defaults:
     -
         scope:
