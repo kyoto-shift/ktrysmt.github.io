@@ -264,6 +264,12 @@ em, i { font-style: italic; }
   border-bottom: 1px solid #eee;
 }
 
+.home .link-blog {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
 .post header {
 	text-align:center;
 
