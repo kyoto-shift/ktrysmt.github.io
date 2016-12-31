@@ -4,28 +4,24 @@ profile: true
 ---
 
 <h1>Pages</h1>
-
-{% for page in site.pages %}
-<ul>
+<ul class="archive-list">
+  {% for page in site.pages %}
   <li>
- <a href="{{ site.baseurl }}{{ page.url | remove_first: '/' }}">
-   <h3>
-   {{ page.title }}
-   </h3>
- </a>
-  </li>
+    <a href="{{ site.baseurl }}{{ page.url | remove_first: '/' }}"><aside class="dates">{{ page.date | date:"%b %d, %Y" }}</aside></a>
+    <a href="{{ site.baseurl }}{{ page.url | remove_first: '/' }}">{{ page.title }}</a>
+  </li> 
+  {% endfor %}
 </ul>
-{% endfor %}
 
 <h1>Slides</h1>
-
-{% for slide in site.data.slides %}
-<ul>
+<ul class="archive-list">
+  {% for slide in site.data.slides %}
   <li>
-    <h3><a href="/slides/#{{ slide.path }}">{{ slide.name }}</a></h3>
-  </li>
+    <a href="/slides/#{{ slide.path }}"><aside class="dates">{{ slide.date | date:"%b %d, %Y" }}</aside></a>
+    <a href="/slides/#{{ slide.path }}">{{ slide.name }}</a>
+  </li> 
+  {% endfor %}
 </ul>
-{% endfor %}
  
 <h1>Blog Posts</h1>
 
