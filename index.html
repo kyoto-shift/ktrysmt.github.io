@@ -15,12 +15,16 @@ profile: true
 </ul>
 {% endfor %}
 
+<h1>Slides</h1>
+
+{% for slide in site.data.slides %}
+<div class="slide-list">
+  <h3><a href="/slides/#{{ slide.path }}">{{ slide.name }}</a></h3>
+</div>
+{% endfor %}
+ 
 <h1>Blog Posts</h1>
 
 {% include post-list.html %}
 
-<h1>Slides</h1>
-
-<div class="readmore"><a href="/slides/">Read More</a></div>
- 
 {% include footer.html %}
