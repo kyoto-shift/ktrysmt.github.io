@@ -266,6 +266,7 @@ em, i { font-style: italic; }
 
 .home .readmore {
   display: flex;
+  margin-bottom: 60px;
   margin-top: 40px;
   justify-content: center;
 }
