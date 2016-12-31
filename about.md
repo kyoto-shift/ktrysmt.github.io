@@ -75,9 +75,6 @@ A minimal boilerplate to use ReactJS, Babel, Webpack, ESlint, Browser-Sync and o
 ## [Quick Custom GSearch](https://github.com/ktrysmt/quick-custom-gsearch)
 It's a Chrome Extension. Quick change searching period in Google. 
 
-## Links
-
-[In English](/about-en/)
 
 {% include footer.html %}
 
