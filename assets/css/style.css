@@ -791,16 +791,20 @@ iframe {
 }
 
 /* toc */
-.toc-list {
+.post .toc-list {
+  margin-top: 20px;
   margin-bottom: 60px;
 }
-.toc-title {
+.post .toc-title {
   font-size: 24px;
   letter-spacing: -1px;
   color: #333;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px; 
+}
+.post .toc-list ul {
+  margin: 0px;
 }
 /* .toc-list ul { */
 /*   margin: 0; */
