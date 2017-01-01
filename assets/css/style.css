@@ -793,13 +793,13 @@ iframe {
 /* toc */
 .post .toc-list {
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .post .toc-title {
   font-size: 24px;
   letter-spacing: -1px;
   color: #333;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px; 
 }
 .post .toc-list ul {
