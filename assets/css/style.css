@@ -791,10 +791,10 @@ iframe {
 }
 
 /* toc */
-.toc-block {
+.toc-list {
   margin-bottom: 60px;
 }
-.toc-block .toc-title {
+.toc-title {
   font-size: 24px;
   letter-spacing: -1px;
   color: #333;
@@ -802,9 +802,9 @@ iframe {
   margin-top: 20px;
   margin-bottom: 20px; 
 }
-.toc-block ul {
-  margin: 0;
-  padding: 0;
-}
+/* .toc-list ul { */
+/*   margin: 0; */
+/*   padding: 0; */
+/* } */
 
 
