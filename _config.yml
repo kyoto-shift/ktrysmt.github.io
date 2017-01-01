@@ -13,12 +13,10 @@ google_analytics: 'UA-XXXXXXXX-X'
 disqus: true
 disqus_shortname: 'syskit'
 
-
 url:            'https:///ktrysmt.github.io'
 author:         'Kotaro Yoshimatsu'
 authorTwitter:  'ktrysmt'
 
-excerpt_separator: <!--more-->
 permalink:       /blog/:title/
 defaults:
   -

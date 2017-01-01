@@ -10,7 +10,9 @@ archive: true
     </header>
     <section id="post-body">
 
-      {{ page.excerpt }}
+      {% if page.post_description %}
+      {{ page.post_description }}
+      {% endif %}
 
       <div class="toc-title">TOC</div>
       <div
