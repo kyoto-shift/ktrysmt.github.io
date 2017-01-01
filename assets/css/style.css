@@ -203,12 +203,18 @@ ul#post-list {
   margin-left: 0px;
 }
 
-ul 	{ 
- margin:0;
- padding:0;
- margin-bottom: 10px;
- padding-left: 20px;
+ul { 
+  margin: 20px 0;
+  padding:0;
+  padding-left: 20px;
 }
+
+ol {
+  margin: 20px 0;
+  padding:0;
+  padding-left: 20px;
+}
+
 li	{
   margin-left: 10px;
   display: list-item;
