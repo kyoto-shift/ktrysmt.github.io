@@ -14,13 +14,15 @@ archive: true
       <p>{{ page.post_description }}</p>
       {% endif %}
 
+      {% if page.use_toc %}
+      <div class="toc-title">TOC</div>
       <div
            class="toc-list"
            data-toc
            >
-      <div class="toc-title">TOC</div>
       </div>
       <script src="https://cdn.jsdelivr.net/auto-toc.js/1.0.0/dist.js"></script>
+      {% endif %}
 
       {{content}}
     </section>
