@@ -7,20 +7,18 @@ aboutPage: true
 markdown: kramdown
 highlighter: rouge
 
-gems: 
-   - jekyll-paginate
-
-paginate: 9999
 baseurl: /
 domain_name: 'https:///ktrysmt.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
 disqus: true
 disqus_shortname: 'syskit'
 
+
 url:            'https:///ktrysmt.github.io'
 author:         'Kotaro Yoshimatsu'
 authorTwitter:  'ktrysmt'
 
+excerpt_separator: <!--more-->
 permalink:       /blog/:title/
 defaults:
   -
