@@ -9,7 +9,15 @@ archive: true
         <h2 class="headline">{{ page.date | date:"%B %-d, %Y" }}</h2>
     </header>
     <section id="post-body">
-        {{content}}
+
+      <div
+             data-toc
+             data-toc-max=6
+             data-toc-ignore="['Your fancy library', 'Table of contents']"
+             >
+      </div>
+
+      {{content}}
     </section>
 </article>
 <footer id="post-meta" class="clearfix">
@@ -48,3 +56,4 @@ archive: true
 
 <p class="small">(c) Copyright {{ site.time | date: '%Y' }} {{ site.author }}</p>
 
+<script async src="https://cdn.jsdelivr.net/auto-toc.js/1.0.0/dist.js"></script>
