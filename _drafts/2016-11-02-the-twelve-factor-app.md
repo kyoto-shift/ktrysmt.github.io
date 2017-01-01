@@ -4,7 +4,9 @@ title: "ソフトウェア品質評価考 / How do we evaluate our software"
 date: 2016-11-02
 comments: true
 category: Architecture
-published: true 
+published: true
+use_toc: true
+post_description: "" 
 ---
 
 我々はどのようにしてソフトウェアを評価すればよいのか、ということに日々頭を悩ませているわけですが。
@@ -52,4 +54,3 @@ published: true
 
 12Factorは実現に当たっての具体的なテクノロジーに言及しているので、比較的定量評価しやすいかと思います。  
 ともすれば恣意的な評価がされることも多い開発チームの生産性やソフトウェアプロダクトの価値評価への定点観測に使えるのではないでしょうか。
- 
