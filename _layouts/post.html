@@ -59,3 +59,21 @@ archive: true
 <p class="small">(c) Copyright {{ site.time | date: '%Y' }} {{ site.author }}</p>
 
 <script async src="https://cdn.jsdelivr.net/auto-toc.js/1.0.0/dist.js"></script>
+
+
+
+
+<div id="toc"></div>
+<script src="js/toc.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+(function($){
+  $('#toc').toc({
+    'selectors': '.article h2,.article h3', //目次として表示する要素のCSSセレクターを指定
+    'anchorName': function(i, heading, prefix) { //アンカーネームのカスタマイズ
+        return prefix+i;
+    },
+  });
+})(jQuery);
+</script>
+
+
