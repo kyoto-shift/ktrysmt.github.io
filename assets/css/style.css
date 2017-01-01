@@ -794,9 +794,13 @@ iframe {
 .toc-block {
   margin-bottom: 60px;
 }
-.toc-block h2 {
-  border: none;
-  margin-bottom: 10px;
+.toc-block .toc-title {
+  font-size: 24px;
+  letter-spacing: -1px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px; 
 }
 .toc-block ul {
   margin: 0;
