@@ -1,6 +1,6 @@
 ---
 title: "文書構成様式の種類"
-date: 2016-01-01
+date: 2017-01-01
 published: true
 use_toc: true
 post_description: "汎用的に使えそうな文書構成の様式をまとめました。"
