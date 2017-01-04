@@ -1,8 +1,12 @@
 {
   "scripts": {
-    "start":"simplehttpserver ./slides/"
+    "start": "simplehttpserver ./slides/"
   },
   "dependencies": {
     "simplehttpserver": "^0.0.6"
+  },
+  "devDependencies": {
+    "textlint": "^7.2.1",
+    "textlint-rule-preset-jtf-style": "^2.2.3"
   }
 }
