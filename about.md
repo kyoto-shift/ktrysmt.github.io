@@ -6,7 +6,7 @@ profile: true
 ---
 
 I am a Japanese web developer and live in Japan.  
-I'm interested in Javascript, Golang, Vim, AWS, and Docker.
+I'm interested in Javascript, Golang, Vim, and Docker.
 
 # Education
 
