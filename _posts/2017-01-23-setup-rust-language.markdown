@@ -75,4 +75,10 @@ augroup NeomakeRustConfig
   autocmd BufWritePost *.rs Neomake! clippy
 augroup END
 let g:racer_cmd = '$HOME/.cargo/bin/racer'
+let g:rustfmt_command = '$HOME/.cargo/bin/rustfmt'
+let $RUST_SRC_PATH = '$HOME/.cargo/src'
 ```
+
+## References
+
+- <http://qiita.com/hinagishi/items/f43538ce8120e483077e>
