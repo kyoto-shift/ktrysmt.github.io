@@ -1,22 +1,22 @@
 ---
 layout: post
-title: "RustupでRust開発環境を揃える"
+title: "Rustの開発環境はRustupでOK"
 date: 2017-01-23
 comments: true
 category: "Rust"
 tags: "Rust"
 published: true
 use_toc: true
-post_description: "開発に一通り必要なものをまとめました" 
+post_description: "開発に必要な基本セットがだいたい揃ったので記事にまとめました" 
 ---
 
-rustupのおかげで開発環境が整ってきました。
+Rustupのおかげで開発環境がだいぶ整ってきましたね。
 
 ## Environment
 
 - Ubuntu
 
-とりあえずUbuntu使っておくのが不具合が少なく無難。macOSでも可。
+とりあえずUbuntu使っておくのが不具合も少なく無難。なおmacOSでも可。
 
 ## Version Manager
 
