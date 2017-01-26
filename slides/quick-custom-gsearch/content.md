@@ -8,7 +8,7 @@
 
 Kotaro Yoshimatsu / age 30
 
-<https://twitter/ktrysmt>
+<https://twitter.com/ktrysmt>
 
 a.k.a. JSおじさん :older_man:
 
