@@ -1,4 +1,6 @@
 - name: DEEP DIVE VIM COMMAND MODE
   path: deep-dive-vim-command-mode
   date: 2016-12-15
-
+- name: QUICK CUSTOM GSEARCH
+  path: quick-custom-gsearch
+  date: 2017-01-26

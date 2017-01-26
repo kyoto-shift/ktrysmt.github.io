@@ -1,4 +1,4 @@
-## who am i | awk '{print $1}'
+## whoami
 
 <img style="border: none;
     border-radius: 20px;
@@ -108,9 +108,23 @@ package.json
 
 ---
 
+### Yet Another
+
+*Cannot apply UglifyJS2 to ES6 as is.*
+
+- Use Browserify or Babili. :sleeping:
+
+*More faster test runner.*  
+*Want to test about async/await.*
+
+- Use Ava. :triumph:
+- Supports async/await and can execute test files in parallel.
+
+---
+
 .eslintrc
 
-```
+```json
 {
   "extends": "airbnb-base",
   "env": { "browser": true },
@@ -126,7 +140,7 @@ package.json
 
 webpack.config.js
 
-```Javascript
+```js
 const webpack = require('webpack');
 const path = require('path');
 
@@ -147,8 +161,59 @@ module.exports = {
 
 ---
 
+test/setup.js
+
+```js
+const jsdom = require('jsdom').jsdom;
+
+const html = `<html><head></head><body>
+<div id='ucs'><div id='main'></div></div>
+</body></html>`;
+
+global.document = jsdom(html, {
+  url: 'https://www.google.co.jp/search?hl=ja&site=webhp&biw=810&bih=1306&q=duckduckgo&oq=duckduckgo&ie=UTF-8&tbs=qdr:y&tbm=',
+});
+
+global.window = document.defaultView;
+Object.keys(document.defaultView).forEach((property) => {
+  if (typeof global[property] === 'undefined') {
+    global[property] = document.defaultView[property];
+  }
+});
+
+global.navigator = {
+  userAgent: 'node.js',
+};
+```
+
+- referred to airbnb/enzyme
+
+---
+
+## Other useful tools
+
+[Chrome拡張の開発時にソースの更新を自動で反映させる \- Qiita](http://qiita.com/daisy1754/items/bbba1b0ad5f60c08706c)
+
+- Contents scriptの開発に便利。
+
+[github.com/acvetkov/sinon-chrome](https://github.com/acvetkov/sinon-chrome)
+
+- GoogleChrome専用APIのSinonライブラリ
+
+---
+
+## conclusion
+
+- Chrome first is justice.
+- We can try modern Javascript practice and ecosystem right away.
+
+---
+
 ## References
 
-- [ググったあとワンクリックで期間指定ができるChrome拡張を作った \- Qiita](http://qiita.com/ktrysmt/items/87370a3ef4b5234e6e09)
 - [github.com/ktrysmt/quick-custom-gsearch](https://github.com/ktrysmt/quick-custom-gsearch)
 - [github.com/acvetkov/sinon-chrome](https://github.com/acvetkov/sinon-chrome)
+- [github.com/avajs/ava](https://github.com/avajs/ava)
+- [enzyme/jsdom\.md at master · airbnb/enzyme](https://github.com/airbnb/enzyme/blob/master/docs/guides/jsdom.md)
+- [Chrome拡張の開発時にソースの更新を自動で反映させる \- Qiita](http://qiita.com/daisy1754/items/bbba1b0ad5f60c08706c)
+- [ググったあとワンクリックで期間指定ができるChrome拡張を作った \- Qiita](http://qiita.com/ktrysmt/items/87370a3ef4b5234e6e09)
