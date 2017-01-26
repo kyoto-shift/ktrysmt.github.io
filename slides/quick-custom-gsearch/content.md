@@ -110,7 +110,7 @@ package.json
 
 ### Yet Another
 
-*Cannot apply UglifyJS2 to ES6 as is.*
+*Cannot apply stable-UglifyJS to ES6 as is.*
 
 - Use Browserify or Babili. :sleeping:
 
