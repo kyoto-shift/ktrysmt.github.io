@@ -143,11 +143,6 @@ nav.main-nav a {
 	border-radius: 3px;
 
 }
-nav.main-nav a.cta {
-	background: #5badf0;
-	color: #fff;
-	margin-left: 12px;
-}
 nav.main-nav a i {
   font-size:2em;
 }
