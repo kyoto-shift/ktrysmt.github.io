@@ -22,7 +22,7 @@ bitbucketへcygwinからpushするときのまとめです。リポジトリへ�
 これができていないとcygwinからpingやwgetなど、名前解決ができません。  
 実行ファイルを右クリックし、プロパティの互換性 から、管理者権限を付与しましょう。
 
-実行ファイルは、cygwinをデフォルトインストールしている場合には下記にあると思います。
+実行ファイルは、cygwinをデフォルトインストールしている場合は大抵下記にあります。
 
 <pre lang="sh">C:cygwinbinmintty.exe</pre>
 
@@ -37,12 +37,11 @@ ping google.co.jpして、応答が返ってくることを確認します。
 ssh-keygen # すべて空EnterでOK
 ls -la</pre>
 
-すると、
+すると、以下のように秘密鍵と公開鍵が確認できるはずです。
 
 <pre lang="sh">id_rsa
 id_rsa.pub</pre>
 
-秘密鍵と公開鍵が確認できるはずです。  
 id_rsaをcatで出力、コピペしてbitbucketの鍵追加画面で追加しましょう。
 
 ## gitリポジトリをremoteにpush

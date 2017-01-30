@@ -9,7 +9,7 @@ tags: Ruby Middleman
 ---
 
 ## middleman-blogのインストール
-rubyが入ってるサーバで、gem install middleman-blog実行
+rubyが入ってるサーバで、gem install middleman-blog実行。
 
 ```
 $ gem install middleman-blog
