@@ -1,5 +1,5 @@
 ---
-title: "文書構成様式の種類"
+title: "文書構成様式を使い分けて読みやすい文章を書く"
 date: 2017-01-01
 published: true
 use_toc: true
