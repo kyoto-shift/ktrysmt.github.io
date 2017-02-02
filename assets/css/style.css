@@ -482,7 +482,7 @@ Post List
 #post-list a {
 	color: #333;
 	display: block;
-	font: bold 19px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: 300 19px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
 }
 
 #post-list .dates {
@@ -664,7 +664,7 @@ h2.month {
 
 .archive-list a {
 	display: block;
-	font: bold 19px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: 300 19px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
 	color: #333;
 }
 
