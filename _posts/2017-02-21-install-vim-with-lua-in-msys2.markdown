@@ -10,9 +10,15 @@ use_toc: true
 post_description: "Msys2のRuntimeは不安定だがそれでもvim+luaが使いたい、です…。" 
 ---
 
+## 前置き
+
 インストール方法自体は[参考サイト](http://qiita.com/tomotanakamura/items/5374e8dc47e710219842)とだいたい同じ。  
 ただしpython3は公式から[64bitのバイナリ](https://www.python.org/downloads/windows/)をいれるほうがよい。  
 というのも、昨今いくつかのVimプラギンがPython3を要求するのと、Msys2経由で入るPython3だとなぜかTimeパッケージが見当たらないため。
+
+## Installation
+
+### Dependencies and Lua
 
 ```sh
 pacman -S base-devel msys2-devel git ruby python2
@@ -24,6 +30,8 @@ make mingw && cd .. && make install
 git clone https://github.com/Alexpux/MSYS2-packages.git
 cd MSYS2-packages/vim
 ```
+
+### Apply the patch
 
 ```patch
 --- a/vim/PKGBUILD
@@ -47,9 +55,11 @@ cd MSYS2-packages/vim
         --enable-python3interp=dynamic \
 ```
 
+### Packaging
+
 ```sh
 makepkg
 pacman -U vim(version).pkg.tar.gz
 ```
 
-以上。
+Over.
