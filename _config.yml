@@ -4,8 +4,12 @@ meta_description: "ソフトウェアエンジニアリングやマネジメン�
 
 aboutPage: true
 
+#markdown: kramdown
+#highlighter: rouge
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 baseurl: /
 domain_name: 'https:///ktrysmt.github.io'
