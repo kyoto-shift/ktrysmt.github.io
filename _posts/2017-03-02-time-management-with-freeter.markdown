@@ -15,7 +15,7 @@ post_description: "試しに使ってみたところ、集中しやすいタス�
 - <https://freeter.io/>
 - タスク管理ツールの類で、Webベースで自分専用のダッシュボードを事由にレイアウト、構築できる。
 
-<img style="width:auto;height:auto;" src="../assets/images/time-management-with-freeter/screenshot.png">
+<img style="width:auto;height:auto;" src="/assets/images/time-management-with-freeter/screenshot.png" />
 
 ## Summary
 
