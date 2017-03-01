@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Freeterを使って２５分単位で仕事をする - 使ってみたら結構いい感じだった"
+title: "Freeter.ioを使ってみたら結構いい感じだった"
 date: 2017-03-02
 comments: true
 category: ""
