@@ -4,8 +4,9 @@ meta_description: "ソフトウェアエンジニアリングやマネジメン�
 
 aboutPage: true
 
-#markdown: kramdown
-#highlighter: rouge
+gems:
+  - jekyll-seo-tag
+
 markdown: kramdown
 kramdown:
   input: GFM
