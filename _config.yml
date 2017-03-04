@@ -21,6 +21,8 @@ disqus_shortname: 'syskit'
 url:            'https:///ktrysmt.github.io'
 author:         'Kotaro Yoshimatsu'
 authorTwitter:  'ktrysmt'
+twitter:
+  username: ktrysmt
 
 permalink:       /blog/:title/
 defaults:
