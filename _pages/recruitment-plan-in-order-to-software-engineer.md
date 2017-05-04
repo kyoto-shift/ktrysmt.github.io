@@ -6,6 +6,8 @@ use_toc: true
 post_description: "エンジニア向け採用計画についてまとめます。"
 ---
 
+
+
 ## ニフティ技術戦略
 
 - [ニフティの技術戦略委員会での取り組み(リンク切れ)](http://muddydixon.hatenablog.com/)
