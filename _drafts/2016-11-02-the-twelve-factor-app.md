@@ -4,6 +4,7 @@ title: "ソフトウェア品質評価考 / How do we evaluate our software"
 date: 2016-11-02
 comments: true
 category: Architecture
+tags: Architecture
 published: true
 use_toc: true
 post_description: "" 

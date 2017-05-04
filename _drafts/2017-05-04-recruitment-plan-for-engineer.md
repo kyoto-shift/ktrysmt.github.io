@@ -1,7 +1,11 @@
 ---
+layout: post
 title: "ソフトウェアエンジニア向け採用計画"
 date: 2017-01-04
-published: false
+comments: true
+category: HR
+tags: HR
+published: true
 use_toc: true
 post_description: "エンジニア向け採用計画についてまとめます。"
 ---
