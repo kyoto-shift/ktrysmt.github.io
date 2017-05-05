@@ -27,19 +27,9 @@ archive: true
       {{content}}
     </section>
 </article>
-<footer id="post-meta" class="clearfix">
-    <a href="/about/">
-        <img class="avatar" src="{{ site.baseurl }}assets/images/avatar.png">
-        <div>
-            <span class="dark">{{ site.author }}</span>
-            <span>{{ site.description }}</span>
-        </div>
-    </a>
 
-    <section id="sharing">
-        {% include share.html %}
-    </section>
-</footer>
+<!-- Post Meta -->
+{% include post-meta.html %}
 
 <!-- Disqus comments -->
 {% if site.disqus %}
