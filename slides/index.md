@@ -2,7 +2,7 @@
 title: Slides
 permalink: /slides/
 layout: page
-profile: true
+profile: false
 ---
 
 <ul class="archive-list">
@@ -13,7 +13,5 @@ profile: true
   </li> 
   {% endfor %}
 </ul>
-
-{% include footer.html %}
 
 
