@@ -247,12 +247,9 @@ em, i { font-style: italic; }
 }
 
 .home h1 {
-	font-size: 30px;
-	letter-spacing: -1px;
+	margin: 50px 0;
 	color: #222;
-  font-weight: bold;
-  margin-top: 60px;
-  margin-bottom: 30px;
+	font: 300 32px/1.4em "Helvetica Neue", Helvetica,Arial,sans-serif;
 }
 
 .home h2 {
