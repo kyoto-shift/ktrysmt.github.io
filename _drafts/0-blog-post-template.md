@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "サンプル記事"
-date: 2016-12-11 15:09:08 +0900 
+title: "{title}"
+date: 201x-1x-1x
 comments: true
 category: ""
 tags: ""
 published: true
 use_toc: true
-post_description: "" 
+post_description: "{description}" 
 ---
 
