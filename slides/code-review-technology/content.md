@@ -138,14 +138,41 @@ Vim上でGit操作いろいろできるやつ。
 
 ctagsのタグファイル自動生成。
 
+* `:Ctags` でOK
+* `let g:auto_ctags = 1` で保存時自動生成
 
-> ctagsとは  
+---
+
+ctagsとは  
+
 > 変数・関数・DOCコメント等の定義リスト（タグファイル）をソースコードから生成するツールで，IDEでよくある宣言ジャンプや呼び出し元への復帰を助ける仕組み。
 
 auto-ctagsはこのタグファイル生成をVimから操作しやすくしてくれます。
 
-* `:Ctags` でOK
-* `let g:auto_ctags = 1`で保存時自動生成
+---
+
+**ctagsについて**
+
+---
+
+ctagsはメンテされていないらしいので...
+
+---
+
+universal-ctags を使いましょう
+
+---
+
+**universal-ctags**
+
+* ビルドインストールを推奨
+* ちゃんとメンテされてる（モダン言語にも対応してる）
+
+前述のauto-ctagsで，Vimが更に便利に。
+
+---
+
+次。
 
 ---
 
@@ -297,7 +324,7 @@ zsh使うならぜひ使いましょう
 **fizzy finder との組み合わせ**
 
 * ghq + peco
-* powerd_cd + fzf
+* powered_cd + fzf
 
 ---
 
@@ -305,17 +332,27 @@ zsh使うならぜひ使いましょう
 
 history | peco と似たような感じ
 
-リポジトリ管理下にあるものはghq getでクローンするようにすると幸せになれます
+リポジトリで管理されているものは全部 `ghq get` で取得するようにすると，幸せになれます
+
+`alias gh='cd $(ghq list -p | peco)'`
+
+* ghq管理下のリポジトリ一覧から
+* pecoで選んで
+* cd
 
 ---
 
 **powerd_cd + fzf**
 
-enhancdと似てるが…，enhancdはちょっと高機能すぎるというときに
+薄いshellscript
+
+enhancdと似てますが，enhancdはちょっと高機能すぎるというときに
 
 リポジトリ管理外の書き捨てのコードや一時的に落としただけのソースがある場所も含め，全体的にcdの履歴管理をしてくれます
 
-`alias c="powered_cd"` は必須です（マジ便利）
+`alias c="powered_cd"` は必須です
+
+マジ便利
 
 * <http://qiita.com/arks22/items/8515a7f4eab37cfbfb17>
 
@@ -327,13 +364,35 @@ enhancdと似てるが…，enhancdはちょっと高機能すぎるというと
 
 効率的なzshのプラクティスは多いが，それでも起動が遅いときはたまにある
 
-私はtmuxを多用するのでzshの起動時間はできるだけ速いほうが望ましい...
+特に私はtmuxを多用するので，zshの起動時間はできるだけ速いほうが嬉しい...
 
-計測し，遅い箇所を特定したい
+計測をし，遅い箇所を特定できるようになりたい
 
 ---
 
-このように測るのだ
+**単純な例**
+
+---
+
+```
+$ time (zsh -i -c exit)
+```
+
+で，Initializeにかかる時間を計測
+
+（↑起動してすぐexitしてる）
+
+---
+
+**遅い箇所をもうちょっと特定できないか**
+
+---
+
+できます
+
+---
+
+こういうのを仕込むと
 
 ```sh
 # .zshenv
@@ -347,65 +406,123 @@ if (which zprof > /dev/null) ;then
 fi
 ```
 
+---
+
+起動時に計測結果が表示される
+
 <img style="width:80%" class="capture" src="./code-review-technology-02.png">
 
----
-
-**そのほか**
-
-* 今ならfish&fishermanもアリだね
+使わないときは `.zshenv` のほうをコメントアウト
 
 ---
 
-**zsh**
-
-* zgen (or zplug)
-* oh-my-zsh/plugins 色々
-* zsh-users/* 色々
-* ghq + peco
-* powerd_cd + fzf
-* zshのパフォーマンス計測
-* yet another zsh
+話はわかったが
 
 ---
 
-1. git
-** * `git config --global credentials.helper ***` 使いましょう，パス入力とかだるいでしょ
-**   * urlにbasic認証はセキュリティ意識低いからね，気をつけようね
-** * その他よくつかうgit alias.
-**   * gbrc (&fzf)
-2. tig 
-** * .tigrc
-3. zsh
-** * zgen (or zplug)
-** * oh-my-zsh/plugins 色々
-** * zsh-users/* 色々
-** * ghq + peco
-** * powerd_cd + fzf
-** * zshのパフォーマンス計測
-** > こうやってはかるのだ
-** ```sh
-** # zshenv
-** zmodload zsh/zprof && zprof
-** ```
-** ```sh
-** # zshrc
-** if (which zprof > /dev/null) ;then
-**   zprof | less
-** fi
-** ```
-** * 今ならfish&fishermanもアリだね
-4. vim 
-** * vim-fugitive
-** * 主要言語にほぼ対応する（させる）ことが重要
-** * コミュニティ巨大，highlightingやcomplessionのpluginは多くあるので適宜補える
-** * その他，語りきれないので割愛
-** * エディタはAtom，VSCode，IntelliJなど好きなもので。
-5. ripgrep
-** * 超早い,おすすめ
-** * sortはされないのでその場合はパイプするかag|ptを代用せよ
-** * vimgrepをripgrepにすると快適
-**   * `command! -nargs=* -complete=file Rg :tabnew | :silent grep <args>`
-6. universal-ctags
-** * ビルドインストール推奨
-** * モダン言語にも対応してる，vimが更に便利に
+めんどくさい！
+
+---
+
+**...というあなたに**
+
+fish & fisherman おすすめ
+
+---
+
+<http://fishshell.com>
+
+* ほぼ設定不要
+* 軽い
+* デフォルトの状態でかなり便利
+  * 補完
+  * 履歴管理，などなど
+* プラグインマネージャーも安定（fisherman）
+
+---
+
+**高速grep**
+
+---
+
+高速grepといえば
+
+ag, pt, ack いろいろありますが...
+
+---
+
+**ripgrep**
+
+---
+
+インストールしておくといいです
+
+並列処理で，めちゃくちゃ速い
+
+* <https://github.com/BurntSushi/ripgrep>
+
+---
+
+**Vimmer向け**
+
+外部vimgrepにripgrepを設定するとマジで幸せになれます！
+
+```
+if executable("rg")
+  set grepprg=rg\ --vimgrep\ --no-heading
+  set grepformat=%f:%l:%c:%m,%f:%l:%m
+endif
+```
+
+```
+command! -nargs=* -complete=file Rg :tabnew | :silent grep <args>
+```
+
+```
+command! -nargs=* -complete=file Rgg :tabnew | :silent grep --sort-files <args>
+```
+
+※ここ最近で一番いいコードだと思ってる
+
+---
+
+注意点
+
+デフォルトではsortはされないので，
+
+* `--sort-files` をつけるか，
+* `| sort` 
+
+するとよいです
+
+`--sort-files` はシングルスレッドになるので，  
+パフォーマンスに注意。
+
+---
+
+**まとめ**
+
+本当にその作業は必要ですかというハックも，  
+もちろん大事ですが…
+
+一技術者として，
+
+手に馴染んだ道具を手入れしたり，工夫したり，ケアをすることも大切なことだと思います。
+
+---
+
+普段から手入れをしておくと，
+
+本当に困ったとき＝緊急時，救われます。
+
+---
+
+引き続き，作業効率が改善する仕組みやツールを探し中です。
+
+みなさんも「これ便利だよ」というものがありましたら教えてください。
+
+泣いて喜びます :joy:
+
+---
+
+__EOD__
