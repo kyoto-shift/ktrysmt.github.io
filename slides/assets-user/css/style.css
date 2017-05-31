@@ -27,4 +27,6 @@ section img.capture {
   margin: 0 auto;
 }
 
-
+.reveal blockquote {
+  font-size: 80%;
+}

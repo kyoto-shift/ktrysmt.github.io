@@ -45,14 +45,17 @@ Kotaro Yoshimatsu / @ktrysmt
 
 ---
 
-1. 豊富な技術スタック → 対応技術を増やす
-2. 数が多い → 気合い
+1. 豊富な技術スタック
+2. 数が多い
 
 ---
 
-1. 対応技術を増やす
+### 1. 豊富な技術スタック
 
-には，どうすればいいか。
+---
+
+技術スタックが多岐にわたるのは  
+どうすればいいか。
 
 ---
 
@@ -61,7 +64,7 @@ Kotaro Yoshimatsu / @ktrysmt
 
 ---
 
-Vimでしょ。
+→ Vimでしょ。
 
 ---
 
@@ -77,7 +80,8 @@ Vimもプラグインが豊富にあり，CLIベースなのでIntegrationも柔
 
 Vimについては語りだすとキリがないので…
 
-コードレビューに役立ちそうなTipsやプラギンを一部紹介。
+コードレビューに役立ちそうなTips，  
+プラグインを一部紹介。
 
 ---
 
@@ -90,7 +94,7 @@ Vimについては語りだすとキリがないので…
 
 ---
 
-*** vim-fugitive**
+**vim-fugitive**
 
 
 Vim上でGit操作いろいろできるやつ。
@@ -101,7 +105,7 @@ Vim上でGit操作いろいろできるやつ。
 
 ---
 
-*** ale**
+**ale**
 
 最近の言語とそのエコシステムに一通り対応してる lint & static check の基盤。
 主要言語の静的解析にだいたい対応してる。
@@ -112,7 +116,7 @@ Vim上でGit操作いろいろできるやつ。
 
 ---
 
-*** easy-motion**
+**easy-motion**
 
 コード上を縦横無尽に動き回れるようになる
 
@@ -122,20 +126,21 @@ Vim上でGit操作いろいろできるやつ。
 
 ---
 
-*** tagbar & filer**
+**tagbar & filer**
 
-ようするにVimがIDE化します
+移動や探査がラクになる。
 
-<img style="width:85%" class="capture" src="./code-review-technology-01.png">
-
+<img style="width:80%" class="capture" src="./code-review-technology-01.png">
 
 ---
 
-*** auto-ctags**
+**auto-ctags**
 
-ctagsとは
+ctagsのタグファイル自動生成。
 
-変数・関数・DOCコメント等の定義リスト（タグファイル）をソースコードから生成するツールで，IDEでよくある宣言ジャンプや呼び出し元への復帰を助ける仕組み。
+
+> ctagsとは  
+> 変数・関数・DOCコメント等の定義リスト（タグファイル）をソースコードから生成するツールで，IDEでよくある宣言ジャンプや呼び出し元への復帰を助ける仕組み。
 
 auto-ctagsはこのタグファイル生成をVimから操作しやすくしてくれます。
 
@@ -162,13 +167,15 @@ auto-ctagsはこのタグファイル生成をVimから操作しやすくして�
 
 ---
 
-（私の環境の場合）
+私の環境の場合
 
-zsh + vim + tig + etc...
+zsh, vim, tig, etc...
+
+なので...
 
 ---
 
-この辺から手入れをしてみる
+この辺の手入れをしてみる
 
 * git & tig
 * zsh
@@ -179,21 +186,21 @@ zsh + vim + tig + etc...
 
 ---
 
-#### git
+**git**
 
 ---
 
-レビューでよくつかうgit系のalias
+**レビューでよくつかうalias**
 
-```zsh
 alias gdw="git diff --color-words"
+
 alias glogg='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
+
 alias gbrc="~/dotfiles/bin/git-checkout-remote-branch"
-```
 
 ---
 
-`alias gdw="git diff --color-words"`
+**alias gdw="git diff --color-words"**
 
 インラインdiff
 
@@ -203,61 +210,202 @@ spaceやインデントをスルーしてくれるので変数名・関数名の
 
 ---
 
-`alias glogg='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'`
+**alias glogg='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'**
 
 tigがめんどくさいときに。`--pretty`は表現力が高いので自分の使いやすいように加工すると良い。
 
 ---
 
-`alias gbrc="~/dotfiles/bin/git-checkout-remote-branch"`
+**alias gbrc="~/dotfiles/bin/git-checkout-remote-branch"**
 
-中身はただのshellです
-
-git branch --remoteの出力をfuzzy finderで絞込選択し，選択後自動的に当該ブランチをチェックアウトします。
+gbr(git branch --remote)の出力をfuzzy finderで絞込選択し，選択後自動的に当該ブランチをチェックアウトします。
 
 マジ便利。
 
 特に，ブランチ名が長い・リモートブランチ数が多いリポジトリにおすすめ。
 
+* <https://github.com/b4b4r07/git-br>
+
+---
+
+**tig**
+
+---
+
+**私の.tigrc**
+
+```
+bind generic g move-first-line
+bind generic G move-last-line
+bind main G move-last-line
+bind main R !git rebase -i %(commit)
+bind diff R !git rebase -i %(commit)
+set main-view = id:width=6 date author commit-title:graph=yes,refs=yes
+set diff-context = 6
+set split-view-width = 70%
+set line-graphics = utf-8
+```
+
+---
+
+* split表示時の幅をもう少し広く
+* g,G を使ってより移動をVimっぽく
+* 任意のログ行で Shift + R すると git rebase -i 起動
+* 行頭にコミットハッシュ値を６文字表示
+* diff閲覧時の差分の前後を３行→６行に増やす
+
+---
+
+**zsh**
+
+---
+
+**いろいろあります**
+
+* 高速プラグインマネージャ
+* 各種プラグイン
+* fizzy finder との組み合わせ
+* zshのパフォーマンス計測
+
+---
+
+**高速プラグインマネージャ**
+
+antigen, zgen, zplug など
+
+zsh使うならぜひ使いましょう
+
+これがないと生きていけない...
+
+---
+
+**各種プラグイン**
+
+* oh-my-zsh/plugins/*
+* zsh-users/*
+
+だいたいこの辺入れとけばいい感じになります
+
+（特に補完系）
+
+それぞれかなり量が多いので，使えそうだなと思ったものから一つずつ試してみると良いです
+
+（特に補完系）
+
+---
+
+**fizzy finder との組み合わせ**
+
+* ghq + peco
+* powerd_cd + fzf
+
+---
+
+**ghq + peco**
+
+history | peco と似たような感じ
+
+リポジトリ管理下にあるものはghq getでクローンするようにすると幸せになれます
+
+---
+
+**powerd_cd + fzf**
+
+enhancdと似てるが…，enhancdはちょっと高機能すぎるというときに
+
+リポジトリ管理外の書き捨てのコードや一時的に落としただけのソースがある場所も含め，全体的にcdの履歴管理をしてくれます
+
+`alias c="powered_cd"` は必須です（マジ便利）
+
+* <http://qiita.com/arks22/items/8515a7f4eab37cfbfb17>
+
+---
+
+**zshのパフォーマンス計測**
+
+---
+
+効率的なzshのプラクティスは多いが，それでも起動が遅いときはたまにある
+
+私はtmuxを多用するのでzshの起動時間はできるだけ速いほうが望ましい...
+
+計測し，遅い箇所を特定したい
+
+---
+
+このように測るのだ
+
+```sh
+# .zshenv
+zmodload zsh/zprof && zprof
+```
+
+```sh
+# .zshrc の末行に
+if (which zprof > /dev/null) ;then
+** zprof | less
+fi
+```
+
+<img style="width:80%" class="capture" src="./code-review-technology-02.png">
+
+---
+
+**そのほか**
+
+* 今ならfish&fishermanもアリだね
+
+---
+
+**zsh**
+
+* zgen (or zplug)
+* oh-my-zsh/plugins 色々
+* zsh-users/* 色々
+* ghq + peco
+* powerd_cd + fzf
+* zshのパフォーマンス計測
+* yet another zsh
+
 ---
 
 1. git
-  * `git config --global credentials.helper ***` 使いましょう，パス入力とかだるいでしょ
-    * urlにbasic認証はセキュリティ意識低いからね，気をつけようね
-  * その他よくつかうgit alias.
-    * gbrc (&fzf)
+** * `git config --global credentials.helper ***` 使いましょう，パス入力とかだるいでしょ
+**   * urlにbasic認証はセキュリティ意識低いからね，気をつけようね
+** * その他よくつかうgit alias.
+**   * gbrc (&fzf)
 2. tig 
-  * .tigrc
+** * .tigrc
 3. zsh
-  * zgen (or zplug)
-  * oh-my-zsh/plugins 色々
-  * zsh-users/* 色々
-  * ghq + peco
-  * powerd_cd + fzf
-  * zshのパフォーマンス計測
-  > こうやってはかるのだ
-  ```sh
-  # zshenv
-  zmodload zsh/zprof && zprof
-  ```
-  ```sh
-  # zshrc
-  if (which zprof > /dev/null) ;then
-    zprof | less
-  fi
-  ```
-  * 今ならfish&fishermanもアリだね
+** * zgen (or zplug)
+** * oh-my-zsh/plugins 色々
+** * zsh-users/* 色々
+** * ghq + peco
+** * powerd_cd + fzf
+** * zshのパフォーマンス計測
+** > こうやってはかるのだ
+** ```sh
+** # zshenv
+** zmodload zsh/zprof && zprof
+** ```
+** ```sh
+** # zshrc
+** if (which zprof > /dev/null) ;then
+**   zprof | less
+** fi
+** ```
+** * 今ならfish&fishermanもアリだね
 4. vim 
-  * vim-fugitive
-  * 主要言語にほぼ対応する（させる）ことが重要
-  * コミュニティ巨大，highlightingやcomplessionのpluginは多くあるので適宜補える
-  * その他，語りきれないので割愛
-  * エディタはAtom，VSCode，IntelliJなど好きなもので。
+** * vim-fugitive
+** * 主要言語にほぼ対応する（させる）ことが重要
+** * コミュニティ巨大，highlightingやcomplessionのpluginは多くあるので適宜補える
+** * その他，語りきれないので割愛
+** * エディタはAtom，VSCode，IntelliJなど好きなもので。
 5. ripgrep
-  * 超早い,おすすめ
-  * sortはされないのでその場合はパイプするかag|ptを代用せよ
-  * vimgrepをripgrepにすると快適
-    * `command! -nargs=* -complete=file Rg :tabnew | :silent grep <args>`
+** * 超早い,おすすめ
+** * sortはされないのでその場合はパイプするかag|ptを代用せよ
+** * vimgrepをripgrepにすると快適
+**   * `command! -nargs=* -complete=file Rg :tabnew | :silent grep <args>`
 6. universal-ctags
-  * ビルドインストール推奨
-  * モダン言語にも対応してる，vimが更に便利に
+** * ビルドインストール推奨
+** * モダン言語にも対応してる，vimが更に便利に
