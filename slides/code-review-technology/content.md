@@ -13,22 +13,229 @@ Kotaro Yoshimatsu / @ktrysmt
 
 ---
 
-## slide1
-
-### subject
-
-example text.
+みなさん
 
 ---
 
-## slide2
+コードレビューしてますか。
 
-```js
-function () {
-  Array.from(Array.keys(5)).reduce((x,y) => {return x + y;});
-}
+---
+
+ある日のプルリクレビュー。
+
+---
+
+プルリクの本数
+* だいたい6~8本
+
+技術スタック
+* JS
+* PHP
+* nodejs
+* docker
+* インフラ系いろいろ
+
+アサインされてないやつも巡回してたり
+
+---
+
+問題点
+1. 技術スタックが多岐にわたる
+2. そもそも数が多いですが
+
+---
+
+対策しましょう。
+
+---
+
+1. 豊富な技術スタック → 対応技術を増やす
+2. 数が多い → 気合い（!?）
+
+---
+
+#### 1. 対応技術を増やす
+
+には，どうすればいいか。
+
+---
+
+エコシステムが巨大で対応技術の多い，  
+安定した開発環境が必要。
+
+---
+
+Vimでしょ。
+
+---
+
+（すみませんただの好みです）
+
+一応弁明すると，
+
+Vimもプラグインが豊富にあり，CLIベースなのでIntegrationも柔軟。
+大抵の言語は標準でサポート，なくてもエコシステムがだいたい吸収してくれる。
+
+---
+
+Vimについては語りだすとキリがないので…
+
+コードレビューに役立ちそうなTipsやプラギンを一部紹介。
+
+---
+
+* vim-fugitive
+* ale
+* easy-motion
+* tagbar & filer
+* auto-ctags
+* 高速vimgrep（※後述）
+
+---
+
+vim-fugitive
+
+Vim上でGit操作いろいろできるやつ。
+:Gdiffで表示して`[c`,`]c`でhunk単位で移動。
+
+---
+
+ale
+
+最近のモダンな言語とそのエコシステムに一通り対応してるlint&static-check基盤。
+phan,phpmd,eslint,flow,xo,stylelintなどだいたい対応してる。
+
+非同期対応なので作業を邪魔せず快適。
+
+特別な設定なしにプラグインを入れるだけでいいのがGood。
+
+---
+
+easy-motion
+
+<img src="https://camo.githubusercontent.com/d5f800b9602faaeccc2738c302776a8a11797a0e/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f333739373036322f323033393335392f61386539333864362d383939662d313165332d383738392d3630303235656138333635362e676966">
+
+---
+
+tagbar & filer
+
+<img src="./code-review-technology-01.png">
+
+ようするにVimがIDE化します
+
+---
+
+auto-ctags
+
+* `:Ctags` でOK
+* `let g:auto_ctags = 1`で保存時自動生成
+
+---
+
+### 2. 数が多い → 気合（!?）
+
+気合というのは（半分）冗談で…。
+
+---
+
+高速化，効率化できる工夫をしていきましょう。
+
+---
+
+効率化できる余地を探す
+
+---
+
+（私の環境の場合）
+
+zsh + vim + tig + etc...
+
+---
+
+* git & tig
+* zsh
+* vim
+* そのほか
+
+それぞれ効率化できそうな場所を探していきます
+
+---
+
+#### git
+
+---
+
+よくつかうgit系alias
+
+```zsh
+alias gdw="git diff --color-words"
+alias glogg='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
+alias gbrc="~/dotfiles/bin/git-checkout-remote-branch"
 ```
 
 ---
 
-## test
+`alias gdw="git diff --color-words"`
+
+インラインdiff
+
+spaceやインデントをスルーしてくれるので変数名・関数名の変更などが見やすくなる
+
+通常の`git diff`と適宜使い分け。
+
+---
+
+`alias glogg='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'`
+
+tigがめんどくさいときに。`--pretty`は表現力が高いので自分の使いやすいように加工すると良い。
+
+---
+
+`alias gbrc="~/dotfiles/bin/git-checkout-remote-branch"`
+
+---
+
+---
+
+
+
+1. git
+  * `git config --global credentials.helper ***` 使いましょう，パス入力とかだるいでしょ
+    * urlにbasic認証はセキュリティ意識低いからね，気をつけようね
+  * その他よくつかうgit alias.
+    * gbrc (&fzf)
+2. tig 
+  * .tigrc
+3. zsh
+  * zgen (or zplug)
+  * oh-my-zsh/plugins 色々
+  * zsh-users/* 色々
+  * ghq + peco
+  * powerd_cd + fzf
+  * zshのパフォーマンス計測
+  > こうやってはかるのだ
+  ```sh
+  # zshenv
+  zmodload zsh/zprof && zprof
+  ```
+  ```sh
+  # zshrc
+  if (which zprof > /dev/null) ;then
+    zprof | less
+  fi
+  ```
+  * 今ならfish&fishermanもアリだね
+4. vim 
+  * vim-fugitive
+  * 主要言語にほぼ対応する（させる）ことが重要
+  * コミュニティ巨大，highlightingやcomplessionのpluginは多くあるので適宜補える
+  * その他，語りきれないので割愛
+  * エディタはAtom，VSCode，IntelliJなど好きなもので。
+5. ripgrep
+  * 超早い,おすすめ
+  * sortはされないのでその場合はパイプするかag|ptを代用せよ
+  * vimgrepをripgrepにすると快適
+    * `command! -nargs=* -complete=file Rg :tabnew | :silent grep <args>`
+6. universal-ctags
+  * ビルドインストール推奨
+  * モダン言語にも対応してる，vimが更に便利に
