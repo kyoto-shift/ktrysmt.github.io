@@ -6,11 +6,10 @@
     height: 128px;
     float: right;" data-src="https://avatars3.githubusercontent.com/u/6156742?v=3&s=460">
 
-Kotaro Yoshimatsu / age 30
+Kotaro Yoshimatsu / @ktrysmt
 
-<https://twitter/ktrysmt>
-
-a.k.a. JSおじさん :older_man:
+- <https://twitter.com/ktrysmt>
+- <https://github.com/ktrysmt>
 
 ---
 
