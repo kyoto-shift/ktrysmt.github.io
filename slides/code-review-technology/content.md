@@ -1,10 +1,6 @@
 ## Whoami
 
-<img style="border: none;
-    border-radius: 20px;
-    width: 128px;
-    height: 128px;
-    float: right;" data-src="https://avatars3.githubusercontent.com/u/6156742?v=3&s=460">
+<img class="avatar" data-src="https://avatars3.githubusercontent.com/u/6156742?v=3&s=460">
 
 Kotaro Yoshimatsu / @ktrysmt
 
@@ -118,24 +114,37 @@ Vim上でGit操作いろいろできるやつ。
 
 *** easy-motion**
 
-<img src="https://camo.githubusercontent.com/d5f800b9602faaeccc2738c302776a8a11797a0e/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f333739373036322f323033393335392f61386539333864362d383939662d313165332d383738392d3630303235656138333635362e676966">
-
 コード上を縦横無尽に動き回れるようになる
+
+
+<img class="capture"  src="https://camo.githubusercontent.com/d5f800b9602faaeccc2738c302776a8a11797a0e/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f333739373036322f323033393335392f61386539333864362d383939662d313165332d383738392d3630303235656138333635362e676966">
+
 
 ---
 
-tagbar & filer
-
-<img src="./code-review-technology-01.png">
+*** tagbar & filer**
 
 ようするにVimがIDE化します
 
+<img style="width:85%" class="capture" src="./code-review-technology-01.png">
+
+
 ---
 
-auto-ctags
+*** auto-ctags**
+
+ctagsとは
+
+変数・関数・DOCコメント等の定義リスト（タグファイル）をソースコードから生成するツールで，IDEでよくある宣言ジャンプや呼び出し元への復帰を助ける仕組み。
+
+auto-ctagsはこのタグファイル生成をVimから操作しやすくしてくれます。
 
 * `:Ctags` でOK
 * `let g:auto_ctags = 1`で保存時自動生成
+
+---
+
+### 2. 数が多い
 
 ---
 

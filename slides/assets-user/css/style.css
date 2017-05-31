@@ -13,3 +13,18 @@
 .reveal ol, .reveal dl, .reveal ul {
   width: 95%;
 }
+
+section img.avatar {
+  border: none;
+  border-radius: 20px;
+  width: 128px;
+  height: 128px;
+  float: right;
+}
+
+section img.capture {
+  display: block;
+  margin: 0 auto;
+}
+
+
