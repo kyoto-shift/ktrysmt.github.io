@@ -92,12 +92,37 @@ Vimについては語りだすとキリがないので…
 
 ---
 
+* プラグインマネージャ
 * vim-fugitive
 * ale
 * vim-easymotion
 * tagbar & filer
 * auto-ctags
 * 高速vimgrep（※後述）
+
+---
+
+**プラグインマネージャ**
+
+使いましょう。
+
+dein, plug, NeoBundle など
+
+---
+
+ありがちなのが...
+
+---
+
+「プラグイン入れすぎて重くなってきた」
+
+---
+
+（プラグインやIDEにもよりますが）
+
+ファイルタイプや拡張子ごとに読み込むプラグインを絞って速度を維持
+
+* `Plug 'fatih/vim-go', { 'for': 'go' }`
 
 ---
 
