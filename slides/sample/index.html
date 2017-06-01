@@ -24,12 +24,6 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? '../assets/css/print/pdf.css' : '../assets/css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
-		<style>
-			img {
-				border: none !important;
-				border-radius: 20px;
-			}
-		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -37,6 +31,12 @@
         <section data-markdown="./title.md" @data-background="#002b36"
                  data-separator="\n---\n$"
                  data-separator-vertical="\n--\n">
+          <script type="text/template"></script>
+        </section>
+				<section data-markdown="./profile.md" @data-background="#002b36"
+                 data-separator="\n---\n$"
+                 data-separator-vertical="\n--\n"
+								 style="text-align:left;">
           <script type="text/template"></script>
         </section>
         <section data-markdown="./content.md" @data-background="#002b36"

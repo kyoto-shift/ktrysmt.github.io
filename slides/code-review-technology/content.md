@@ -361,7 +361,7 @@ enhancdと似てますが，enhancdはちょっと高機能すぎるというと
 
 マジ便利
 
-* <http://qiita.com/arks22/items/8515a7f4eab37cfbfb17>
+<http://qiita.com/arks22/items/8515a7f4eab37cfbfb17>
 
 ---
 

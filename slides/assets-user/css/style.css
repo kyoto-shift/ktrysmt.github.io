@@ -20,6 +20,11 @@ section img.avatar {
   width: 128px;
   height: 128px;
   float: right;
+  border-radius: 20px;
+}
+
+img {
+  border: none !important;
 }
 
 section img.capture {
