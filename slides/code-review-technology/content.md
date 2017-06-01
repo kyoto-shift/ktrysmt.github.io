@@ -2,10 +2,17 @@
 
 <img class="avatar" data-src="https://avatars3.githubusercontent.com/u/6156742?v=3&s=460">
 
-Kotaro Yoshimatsu / @ktrysmt
+Kotaro Yoshimatsu
 
-- <https://twitter.com/ktrysmt>
-- <https://github.com/ktrysmt>
+@ktrysmt
+
+<https://twitter.com/ktrysmt>  
+<https://github.com/ktrysmt>
+
+経歴
+* 学生時代 SEO営業したり,Perlモンガーだったり
+* 受託開発会社で5年程 がんばる
+* 2015年秋 リクルート住まいカンパニーにJOIN
 
 ---
 
