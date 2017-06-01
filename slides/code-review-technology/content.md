@@ -525,6 +525,14 @@ command! -nargs=* -complete=file Rgg :tabnew | :silent grep --sort-files <args>
 
 ---
 
+**数が多いんですが対策のまとめ**
+
+速いは正義
+
+それでも気合は必要
+
+---
+
 **まとめ**
 
 本当にその作業は必要ですかというハックも，  
@@ -533,8 +541,6 @@ command! -nargs=* -complete=file Rgg :tabnew | :silent grep --sort-files <args>
 一技術者として，
 
 手に馴染んだ道具を手入れしたり，工夫したり，ケアをすることも大切なことだと思います。
-
----
 
 普段から手入れをしておくと，
 
