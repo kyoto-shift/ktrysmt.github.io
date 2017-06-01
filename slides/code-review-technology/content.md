@@ -94,7 +94,7 @@ Vimについては語りだすとキリがないので…
 
 * vim-fugitive
 * ale
-* easy-motion
+* vim-easymotion
 * tagbar & filer
 * auto-ctags
 * 高速vimgrep（※後述）
@@ -123,13 +123,12 @@ Vim上でGit操作いろいろできるやつ。
 
 ---
 
-**easy-motion**
+**vim-easymotion**
 
 コード上を縦横無尽に動き回れるようになる
 
 
-<img class="capture"  src="https://camo.githubusercontent.com/d5f800b9602faaeccc2738c302776a8a11797a0e/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f333739373036322f323033393335392f61386539333864362d383939662d313165332d383738392d3630303235656138333635362e676966">
-
+<img class="capture" src="./code-review-technology-03.png">
 
 ---
 
@@ -179,11 +178,30 @@ universal-ctags を使いましょう
 
 ---
 
+**豊富な技術スタック対策のまとめ**
+
+* 巨大なエコシステムに乗っかりましょう
+  * Vim以外にも色々 IntelliJ,Emacs,Atom,VSCode...
+* 最近だとVSCODEもいいですね
+  * 開発が活発
+  * IDEらしさもちゃんとあり
+  * プラグインが豊富
+  * 意外と軽い
+  * 無料
+
+サーバーサイドやインフラを生業とする人は，VimやEmacs使いが多いですね。
+
+---
+
 次。
 
 ---
 
 ### 2. 数が多い
+
+---
+
+気合で。
 
 ---
 
