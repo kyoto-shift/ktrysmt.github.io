@@ -10,9 +10,9 @@ Kotaro Yoshimatsu
 <https://github.com/ktrysmt>
 
 経歴
-* 学生時代 SEO営業したり,Perlモンガーだったり
-* 受託開発会社で5年程 がんばる
-* 2015年秋 リクルート住まいカンパニーにJOIN
+* 学生時代 PerlMonger
+* 受託開発会社 5年くらい
+* リクルート住まいカンパニー 2年目 ← ｲﾏｺｺ
 
 ---
 
