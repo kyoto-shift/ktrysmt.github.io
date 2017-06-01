@@ -106,7 +106,7 @@ Vimについては語りだすとキリがないので…
 
 使いましょう。
 
-dein, plug, NeoBundle など
+Dein, Plug, NeoBundle など
 
 ---
 
