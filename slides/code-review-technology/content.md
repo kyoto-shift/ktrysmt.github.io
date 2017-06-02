@@ -24,21 +24,22 @@ Kotaro Yoshimatsu
 
 ---
 
-ある日のプルリクレビュー。
+わたしのある日のプルリクレビュー →
 
 ---
 
 プルリクの本数
-* だいたい6~8本
+* だいたいいつも6~8本
 
 技術スタック
-* JS
+* JS,CSS（フロントエンド）
 * PHP
-* nodejs
-* docker
-* インフラ系いろいろ
+* NodeJS
+* Ruby
+* Docker
+* その他インフラ系いろいろ
 
-アサインされてないやつも時々巡回してたり
+アサインされてないやつも時々巡回してたり...
 
 ---
 
@@ -48,7 +49,7 @@ Kotaro Yoshimatsu
 
 ---
 
-対策しましょう。
+対策します
 
 ---
 
@@ -57,7 +58,7 @@ Kotaro Yoshimatsu
 
 ---
 
-### 1. 豊富な技術スタック
+#### 1. 豊富な技術スタック
 
 ---
 
@@ -79,7 +80,7 @@ Kotaro Yoshimatsu
 
 一応弁明すると，
 
-Vimもプラグインが豊富にあり，CLIベースなのでIntegrationも柔軟。
+Vimもプラグインが豊富にあり，CLIベースなので柔軟。
 
 大抵の言語は標準でサポート，それ以外もエコシステムがだいたい吸収してくれる。
 
@@ -87,8 +88,7 @@ Vimもプラグインが豊富にあり，CLIベースなのでIntegrationも柔
 
 Vimについては語りだすとキリがないので…
 
-コードレビューに役立ちそうなTips，  
-プラグインを一部紹介。
+コードレビューに役立ちそうなTipsなどを一部紹介。
 
 ---
 
@@ -118,10 +118,11 @@ Dein, Plug, NeoBundle など
 
 ---
 
-（プラグインやIDEにもよりますが）
+（エディタやIDEによりますが）
 
-ファイルタイプや拡張子ごとに読み込むプラグインを絞って速度を維持
+ファイルタイプや拡張子ごとに読み込むプラグインを絞って速度を維持するなど
 
+Plug の例
 * `Plug 'fatih/vim-go', { 'for': 'go' }`
 
 ---
@@ -131,9 +132,11 @@ Dein, Plug, NeoBundle など
 
 Vim上でGit操作いろいろできるやつ。
 
-`:Gdiff` で表示して
+`:Gdiff` が便利，
 
 `[c`,`]c` でhunk単位で移動
+
+レビューでは `:Gblame` がマジ便利
 
 ---
 
@@ -159,7 +162,9 @@ Vim上でGit操作いろいろできるやつ。
 
 **tagbar & filer**
 
-移動や探査がラクになる。
+見た目がIDEチックに
+
+移動や探査がラクになる
 
 <img style="width:80%" class="capture" src="./code-review-technology-01.png">
 
@@ -170,7 +175,7 @@ Vim上でGit操作いろいろできるやつ。
 ctagsのタグファイル自動生成。
 
 * `:Ctags` でOK
-* `let g:auto_ctags = 1` で保存時自動生成
+* `let g:auto_ctags = 1` で保存時に自動生成
 
 ---
 
@@ -182,13 +187,9 @@ auto-ctagsはこのタグファイル生成をVimから操作しやすくして�
 
 ---
 
-**ctagsについて**
-
----
+ctagsについて補足
 
 ctagsはメンテされていないらしいので...
-
----
 
 universal-ctags を使いましょう
 
@@ -214,7 +215,7 @@ universal-ctags を使いましょう
   * 意外と軽い
   * 無料
 
-サーバーサイドやインフラを生業とする人は，VimやEmacs使いが多そう。
+自分の手に馴染むものを選び，育てましょう
 
 ---
 
@@ -222,17 +223,17 @@ universal-ctags を使いましょう
 
 ---
 
-### 2. 数が多い
+#### 2. 数が多い
 
 ---
 
-気合で。
+→ 気合で。
 
 ---
 
-### 2. 数が多い → 気合
+### 2. 数が多い → 気合 (!?)
 
-気合というのは（半分）冗談で…。
+というのは（半分）冗談で…。
 
 ---
 
@@ -246,20 +247,20 @@ universal-ctags を使いましょう
 
 私の環境の場合
 
-zsh, vim, tig, etc...
+zsh, vim, tig, tmux etc...
 
-なので...
+という感じなので...
 
 ---
 
 この辺の手入れをしてみる
 
-* git & tig
+* git
+* tig
 * zsh
-* vim
-* そのほか
+* grep
 
-それぞれ効率化できそうな場所を探していきます
+それぞれ高速化・効率化できそうな箇所を探していきます
 
 ---
 
@@ -269,11 +270,11 @@ zsh, vim, tig, etc...
 
 **レビューでよくつかうalias**
 
-alias gdw="git diff --color-words"
+* alias gdw="git diff --color-words"
 
-alias glogg='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
+* alias glogg='git log --graph --name-status --pretty=format:"%C(red)%h %C(green)%an %Creset%s %C(yellow)%d%Creset"'
 
-alias gbrc="~/dotfiles/bin/git-checkout-remote-branch"
+* b4b4r07/git-br
 
 ---
 
@@ -293,13 +294,15 @@ tigがめんどくさいときに。`--pretty`は表現力が高いので自分�
 
 ---
 
-**alias gbrc="~/dotfiles/bin/git-checkout-remote-branch"**
+**b4b4r07/git-br**
 
 gbr(git branch --remote)の出力をfuzzy finderで絞込選択し，選択後自動的に当該ブランチをチェックアウトします。
 
 マジ便利。
 
 特に，ブランチ名が長い・リモートブランチ数が多いリポジトリにおすすめ。
+
+元ソース（小さなShellScript）を，少しいじって使ってます
 
 * <https://github.com/b4b4r07/git-br>
 
@@ -325,6 +328,7 @@ set line-graphics = utf-8
 
 ---
 
+こういうことやってる
 * split表示時の幅をもう少し広く
 * g,G を使ってより移動をVimっぽく
 * 任意のログ行で Shift + R すると git rebase -i 起動
@@ -394,7 +398,7 @@ history | peco と似たような感じ
 
 **powerd_cd + fzf**
 
-薄いshellscript
+`powered_cd` は，薄いshellscript
 
 enhancdと似てますが，enhancdはちょっと高機能すぎるというときに
 
@@ -412,9 +416,13 @@ enhancdと似てますが，enhancdはちょっと高機能すぎるというと
 
 ---
 
-効率的なzshのプラクティスは多いが，それでも起動が遅いときはたまにある
+zshを色々いじりだすと，zshの起動時間の遅さが気になってくる
+
+---
 
 特に私はtmuxを多用するので，zshの起動時間はできるだけ速いほうが嬉しい...
+
+---
 
 計測をし，遅い箇所を特定できるようになりたい
 
@@ -528,17 +536,17 @@ endif
 command! -nargs=* -complete=file Rg :tabnew | :silent grep <args>
 ```
 
+↓ ソートあり版（後述）
+
 ```
 command! -nargs=* -complete=file Rgg :tabnew | :silent grep --sort-files <args>
 ```
-
-※ここ最近で一番いいコードだと思ってる
 
 ---
 
 注意点
 
-デフォルトではsortはされないので，
+デフォルトでは出力結果がsortはされないので，
 
 * `--sort-files` をつけるか，
 * `| sort` 
@@ -550,22 +558,36 @@ command! -nargs=* -complete=file Rgg :tabnew | :silent grep --sort-files <args>
 
 ---
 
-**数が多いんですが対策のまとめ**
+**数が多い対策のまとめ**
 
 速いは正義
 
-それでも気合は必要
+工夫の余地はいろいろあります
+
+（それでも気合は必要）
+
+---
+
+コードをがっつり追いかけるときのレビューが主題だったので今回は割愛しますが，
+プルリク文脈でのOSSもいろいろあります。
+
+* https://github.com/facebook/mention-bot
+* http://haya14busa.com/reviewdog/
+
+楽しそう
 
 ---
 
 **まとめ**
 
-本当にその作業は必要ですかというハックも，  
+本当にその作業は必要ですかという業務ハックも，  
 もちろん大事ですが…
 
 一技術者として，
 
-手に馴染んだ道具を手入れしたり，工夫したり，ケアをすることも大切なことだと思います。
+手に馴染んだ道具を手入れしたり，工夫したりすることも大切なことだと思います。
+
+---
 
 普段から手入れをしておくと，
 
