@@ -162,11 +162,9 @@ Vim上でGit操作いろいろできるやつ。
 
 **tagbar & filer**
 
-見た目がIDEチックに
+IDEチックに
 
-移動や探査がラクになる
-
-<img style="width:80%" class="capture" src="./code-review-technology-01.png">
+<img style="width:70%" class="capture" src="./code-review-technology-01.png">
 
 ---
 
@@ -231,7 +229,7 @@ universal-ctags を使いましょう
 
 ---
 
-### 2. 数が多い → 気合 (!?)
+#### 2. 数が多い → 気合 (!?)
 
 というのは（半分）冗談で…。
 
@@ -268,7 +266,7 @@ zsh, vim, tig, tmux etc...
 
 ---
 
-**レビューでよくつかうalias**
+**レビューでよくつかうコマンド**
 
 * alias gdw="git diff --color-words"
 
@@ -424,7 +422,7 @@ zshを色々いじりだすと，zshの起動時間の遅さが気になって�
 
 ---
 
-計測をし，遅い箇所を特定できるようになりたい
+計測をしたい
 
 ---
 
@@ -534,12 +532,6 @@ endif
 
 ```
 command! -nargs=* -complete=file Rg :tabnew | :silent grep <args>
-```
-
-↓ ソートあり版（後述）
-
-```
-command! -nargs=* -complete=file Rgg :tabnew | :silent grep --sort-files <args>
 ```
 
 ---
