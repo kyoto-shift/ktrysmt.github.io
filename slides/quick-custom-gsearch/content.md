@@ -26,7 +26,7 @@ You can access the control panel to manage interval quickly, just one click.
 
 ## Screenshot
 
-![capture](https://raw.githubusercontent.com/ktrysmt/quick-custom-gsearch/master/capture.png)
+<img style="width:80%" class="capture" src="https://raw.githubusercontent.com/ktrysmt/quick-custom-gsearch/master/capture.png">
 
 ---
 
