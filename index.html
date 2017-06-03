@@ -23,15 +23,5 @@ profile: true
   </li> 
   {% endfor %}
 </ul>
-
-<h1>Slides</h1>
-<ul class="archive-list">
-  {% for slide in site.data.slides %}
-  <li>
-    <a href="/slides/#{{ slide.path }}"><aside class="dates">{{ slide.date | date:"%b %d, %Y" }}</aside></a>
-    <a href="/slides/#{{ slide.path }}">{{ slide.name }}</a>
-  </li> 
-  {% endfor %}
-</ul>
  
 {% include footer.html %}

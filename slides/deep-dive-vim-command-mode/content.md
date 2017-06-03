@@ -140,18 +140,11 @@ Example combined them;
 |as| A Sentence and whitespace behind it |
 |is| A Sentence (exclude whitespace) | 
 
-Footnote; Visual mode or Operator required.
-
-
 ---
-
  
 ## 2. Operator
 
-
 ---
-
- 
 
 ## Operator ?
 
@@ -165,9 +158,8 @@ Footnote; Visual mode or Operator required.
 |U| Make uppercase | 
 |>| Indent right | 
 |<| Indent left | 
- 
----
 
+---
 
 ## Combine Text Object and Operator
 
