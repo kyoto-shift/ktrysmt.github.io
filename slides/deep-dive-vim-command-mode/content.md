@@ -5,7 +5,7 @@
 * Kotaro Yoshimatsu
 
 * twitter@ktrysmt
---
+
 * 経歴
   * 学生時代 PerlMonger
   * 受託開発会社 5年くらい

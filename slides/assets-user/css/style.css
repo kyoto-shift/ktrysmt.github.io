@@ -34,4 +34,10 @@ section img.capture {
 
 .reveal blockquote {
   font-size: 80%;
+  width: 100%;
+  font-style: oblique;
+}
+
+.reveal pre {
+  width: 100%;
 }
