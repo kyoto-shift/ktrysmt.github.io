@@ -787,6 +787,10 @@ h2.month {
   height: 100%;
 }
 
+iframe.speakerdeck-iframe {
+	margin: 1em 0;
+}
+
 /*  slide */
 .slide-list {
   margin: 30px 0;
