@@ -1,3 +1,4 @@
+<!-- .slide: class="center" -->
 ### コードレビューを支える技術
 
 Kotaro Yoshimatsu

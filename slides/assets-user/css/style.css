@@ -41,3 +41,15 @@ section img.capture {
 .reveal pre {
   width: 100%;
 }
+
+.reveal pre code {
+  overflow: visible;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Lato, sans-serif !important; 
+  font-weight: bold !important;
+}

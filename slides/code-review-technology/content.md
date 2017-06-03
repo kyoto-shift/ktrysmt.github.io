@@ -1,4 +1,4 @@
-## Whoami
+### Whoami
 
 <img class="avatar" data-src="https://avatars3.githubusercontent.com/u/6156742?v=3&s=460">
 
@@ -458,7 +458,7 @@ zmodload zsh/zprof && zprof
 ```sh
 # .zshrc の末行に
 if (which zprof > /dev/null) ;then
-** zprof | less
+  zprof | less
 fi
 ```
 

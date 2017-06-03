@@ -1,9 +1,9 @@
-## Whoami
+### Whoami
 
 <img class="avatar" data-src="https://avatars3.githubusercontent.com/u/6156742?v=3&s=460">
 
-Kotaro Yoshimatsu
-
+Kotaro Yoshimatsu  
+  
 @ktrysmt
 
 <https://twitter.com/ktrysmt>  

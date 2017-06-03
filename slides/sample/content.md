@@ -1,12 +1,12 @@
-## slide1
+### slide1
 
-### subject
+#### subject
 
 example text.
 
 ---
 
-## slide2
+### slide2
 
 ```js
 function () {
@@ -16,4 +16,8 @@ function () {
 
 ---
 
-## test
+<!-- .slide: class="center" -->
+### center test
+
+---
+

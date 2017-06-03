@@ -1,3 +1,4 @@
+<!-- .slide: class="center" -->
 ## TITLE
 
 Kotaro Yoshimatsu
