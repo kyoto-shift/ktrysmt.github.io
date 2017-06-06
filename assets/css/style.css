@@ -816,9 +816,23 @@ iframe.speakerdeck-iframe {
 /*   padding: 0; */
 /* } */
 
-.NextPrevPostLink {
+.next-prev-post-link {
   display: flex;
 }
 .NextPrevPostLink .next {
   text-align: right;
+}
+
+.recent-post-list h2 {
+  text-align: justify;
+  line-height: 1.7em;
+  margin: 2em 0px;
+  padding: 0;
+  padding-left: 20px;
+}
+.recent-post-list ul {
+
+}
+.recent-post-list li {
+
 }
