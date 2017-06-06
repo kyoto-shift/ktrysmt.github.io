@@ -6,7 +6,11 @@ aboutPage: true
 
 gems:
   - jekyll-seo-tag
-  - jekyll-archives
+  - jemoji
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
 
 markdown: kramdown
 kramdown:

@@ -816,4 +816,9 @@ iframe.speakerdeck-iframe {
 /*   padding: 0; */
 /* } */
 
-
+.NextPrevPostLink {
+  display: flex;
+}
+.NextPrevPostLink .next {
+  text-align: right;
+}
