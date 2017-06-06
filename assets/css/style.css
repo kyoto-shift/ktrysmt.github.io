@@ -823,7 +823,7 @@ iframe.speakerdeck-iframe {
   text-align: right;
 }
 
-.recent-post-list h2 {
+.recent-post-list {
   text-align: justify;
   line-height: 1.7em;
   margin: 2em 0px;
@@ -831,8 +831,5 @@ iframe.speakerdeck-iframe {
   padding-left: 20px;
 }
 .recent-post-list ul {
-
-}
-.recent-post-list li {
-
+  margin: 0px;
 }

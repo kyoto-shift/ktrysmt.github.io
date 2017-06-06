@@ -34,6 +34,9 @@ archive: true
 <!-- NextPrevPostLink -->
 {% include next-prev-post-link.html %}
 
+<!-- Recent post list -->
+{% include recent-post-list.html %}
+
 <!-- Disqus comments -->
 {% if site.disqus %}
     <div class="archive readmore">
@@ -41,9 +44,6 @@ archive: true
         {% include disqus.html %}
     </div>
 {% endif %}
-
-<!-- Archive post list -->
-{% include post-list.html %}
 
 <p class="small">(c) Copyright {{ site.time | date: '%Y' }} {{ site.author }}</p>
 
