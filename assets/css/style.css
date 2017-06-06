@@ -811,15 +811,11 @@ iframe.speakerdeck-iframe {
 .post .toc-list ul {
   margin: 0px;
 }
-/* .toc-list ul { */
-/*   margin: 0; */
-/*   padding: 0; */
-/* } */
 
 .next-prev-post-link {
   display: flex;
 }
-.NextPrevPostLink .next {
+.next-prev-post-link .next {
   text-align: right;
 }
 
