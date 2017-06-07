@@ -218,11 +218,18 @@ li	{
   display: list-item;
 }
 
-/* Line Height */
+/* section#post-body */
 #post-body, p { 
-  /* text-align: justify; */
   line-height:1.7; 
 }
+
+section#post-body img,
+section#post-body iframe {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
 .home p {
   margin-bottom: 10px;
 }
@@ -814,6 +821,7 @@ iframe.speakerdeck-iframe {
 
 .next-prev-post-link {
   display: flex;
+  justify-content: space-between;
 }
 .next-prev-post-link .next {
   text-align: right;
