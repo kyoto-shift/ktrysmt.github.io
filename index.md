@@ -1,22 +1,23 @@
 ---
-title: ktrysmt
+title: Kotaro Yoshimatsu a.k.a ktrysmt 
 permalink: /
+layout: page
 ---
 
-### Kotaro Yoshimatsu a.k.a ktrysmt
+<img src="/assets/images/avatar.png" style="width:128px;">
 
 I'm a japanese web developer and live in Japan.  
-- work as Site Reliability Engineer, or Gopher. 
-- I am interested in Javascript, Golang, Vim, and Docker.
+- I work as Site Reliability Engineer, Gopher and Javascript Ninja. 
+- I am interested in Golang, Vim, Docker and Site Reliability Engineering.
 
 ### SNS
 
 - [Twitter](https://twitter.com/{{ site.authorTwitter }})
 - [Github](https://github.com/{{ site.authorTwitter }})
 - [Blog(ja)]({{ site.url }}/blog/)
+- [Talks - Speaker Deck](https://speakerdeck.com/{{ site.authorTwitter }})
 
 ### Contact
 
 - kotaro.yoshimatsu@gmail.com
 
-{% include footer.html %}

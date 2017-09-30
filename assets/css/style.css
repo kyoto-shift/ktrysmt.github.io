@@ -63,7 +63,7 @@ h1 {
 	font-size: 30px;
 	letter-spacing: -1px;
 	color: #222;
-	font-weight: bold;
+  font: 300 32px/1.4em "Helvetica Neue", Helvetica,Arial,sans-serif;
 }
 
 header h1 {

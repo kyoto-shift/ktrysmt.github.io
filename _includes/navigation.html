@@ -1,6 +1,9 @@
 <nav class="main-nav">
+    {% if page.url != "/blog/" %}
+        <a href="/blog/">Blog Top</a>
+    {% endif %}
     {% if page.url != "/" %}
-        <a href="/"> <span class="arrow">←</span> Home </a>
+        <a href="/">About me</a>
     {% endif %}
 
     <a href="https://twitter.com/{{ site.authorTwitter }}"><i class="fa fa-twitter fa-2" aria-hidden="true"></i></a>

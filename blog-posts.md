@@ -2,9 +2,8 @@
 title: ktrysmt's blog 
 permalink: /blog/
 profile: false 
+layout: list
 ---
-
-# ktrysmt's blog
 
 <ul id="post-list">
     {% for post in site.posts %}
