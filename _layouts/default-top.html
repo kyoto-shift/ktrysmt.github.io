@@ -16,12 +16,7 @@
 </head>
 <body>
 
-  {% if page.profile %}
-      {% include profile.html %}
-  {% endif %}
-
   <section id="wrapper" class="{% if page.profile %}home{% endif %}">
-  {% include navigation.html %}
     {{ content }}
   </section>
 

@@ -122,7 +122,6 @@ h2 {
 }
 
 nav.main-nav {
-	padding: 20px 20px 0;
 	background: #fff;
 	background: rgba(255,255,255,.90);
 	margin: 0 auto;
@@ -150,7 +149,7 @@ nav.main-nav a i {
 #wrapper {
   max-width: 800px;
   margin: 0 auto;
-  padding: 60px 40px 10px 40px;
+  padding: 40px 40px 10px 40px;
 }
 
 #wrapper.home {
@@ -539,6 +538,10 @@ Post List
 }
 
 article.page {
+    margin: 120px 0 0 0;
+}
+
+article.top {
     margin: 80px 0 0 0;
 }
 
@@ -548,7 +551,7 @@ article.page {
 }
 
 .post {
-	margin: 80px 0 0 0;
+	margin: 120px 0 0 0;
 }
 
 #post-meta {
