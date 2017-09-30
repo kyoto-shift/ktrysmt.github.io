@@ -14,14 +14,16 @@ profile: true
 </ul>
 <div class="readmore"><a href="/blog/">View all posts</a></div>
  
-<h1>Pages</h1>
-<ul class="archive-list">
-  {% for page in site.pages %}
-  <li>
-    <a href="/{{ page.url | remove_first: '/' }}"><aside class="dates">{{ page.date | date:"%b %d, %Y" }}</aside></a>
-    <a href="/{{ page.url | remove_first: '/' }}">{{ page.title }}</a>
-  </li> 
-  {% endfor %}
-</ul>
+<!--
+  <h1>Pages</h1>
+  <ul class="archive-list">
+    {% for page in site.pages %}
+    <li>
+      <a href="/{{ page.url | remove_first: '/' }}"><aside class="dates">{{ page.date | date:"%b %d, %Y" }}</aside></a>
+      <a href="/{{ page.url | remove_first: '/' }}">{{ page.title }}</a>
+    </li> 
+    {% endfor %}
+  </ul>
+-->
  
 {% include footer.html %}
