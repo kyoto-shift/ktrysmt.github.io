@@ -24,7 +24,7 @@ Microservicesが市民権を得てきた昨今，特にAWSのELB等をInternal�
 > * If the domain name can't be resolved, NGINX fails to start or reload its configuration.
 > * NGINX caches the DNS records until the next restart or configuration reload, ignoring the records' TTL values.
 
-再度名前を引かせるためにはNginxをstop/startするかrestartする必要があるということになります。
+再度名前を引かせるためにはNginxをreload, stop/start, あるいはrestartをする必要があるということになります。
 
 ## 2. proxy_passにURLをsetした変数を渡すと名前解決にresolverを使うようになる
 
@@ -198,7 +198,7 @@ http {
 }
 ```
 
-upstreamに定義したいproxy先の数だけserverディレクティブを書く必要があり少し冗長ですが，
+upstreamに定義したいproxy先の数だけserverコンテキストを書く必要があり少し冗長ですが，
 全体的に簡潔で見通しの良いコードにおさまりそうです。
 流量によってはulimitなどでファイルディスクリプタまわりを調整してあげると良さそうです。
 
