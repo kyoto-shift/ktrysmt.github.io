@@ -75,6 +75,10 @@ header h2.headline {
   border-bottom:none;
 }
 
+header span.list-headline {
+  color: rgb(170,170,170);
+}
+
 h2 {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -218,6 +222,9 @@ li	{
 }
 
 /* section#post-body */
+#post-body {
+  padding-top: 10px;
+}
 #post-body, p { 
   line-height:1.7; 
 }
