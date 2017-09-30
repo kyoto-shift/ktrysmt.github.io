@@ -38,7 +38,7 @@ location / {
 
 ELBは不定期にIPが変わるため，この書き方ではいずれどこかのタイミングでNetwork unreachableになってしまいます。
 
-公式の`proxy_pass`では，以下のような説明があります。
+公式のproxy_passでは，以下のような説明があります。
 
 <http://nginx.org/en/docs/http/ngx_http_proxy_module.html#proxy_pass>
 
@@ -67,19 +67,18 @@ location / {
 }
 ```
 
-http|server|locationコンテキストのいずれかにて`set`でurlを変数定義し，
-かつ`resolver`す。
-前者はhttpコンテキストにおいて`set`が使われる場所の名前解決をTTLのタイミングで行ってくれます。
-後者の場合は`location`コンテキストでのみ`resolver`が有効となり，TTL関係なく5秒おきに名前解決します。
+http|server|locationコンテキストのいずれかにてsetでurlを変数定義し，かつresolverを定義します。
+前者はhttpコンテキストにおいてsetが使われる場所の名前解決をTTLのタイミングで行ってくれます。
+後者の場合はlocationコンテキストでのみresolverが有効となり，TTL関係なく5秒おきに名前解決します。
 
-なおここで使っている`169.254.169.253`はAWSが提供しているDNSサーバで，`8.8.8.8`はGoogleが提供しているそれです（`8.8.8.8 valid=5s`は，あまりお行儀が良くないですが…）。
+なおここで使っている169.254.169.253はAWSが提供しているDNSサーバで，8.8.8.8はGoogleが提供しているそれです（`8.8.8.8 valid=5s`は，あまりお行儀が良くないですが…）。
 
 AWS ELBの文脈で言うと，VPCを使っているならば`CIDR + 2`のIPがVPCの内部DNSとして割り当てられるので，そちらを指定してもいいですね。
 
 ## 3. upstreamでもresolverを使いたい（が，そうやすやすと使わせてくれない）
 
 `2.`の方法で万事解決かと思いきやこのテクニックはupstreamと組み合わせて使うことができません。
-`upstream`内では`set`を使えない仕様であるためです。
+upstream内ではsetを使えない仕様であるためです。
 
 対策としては3つあります。
 
@@ -104,13 +103,13 @@ http {
 
 ### 3rd Partyモジュールを使う
 
-よく言及されているのは`GUI/nginx-upstream-dynamic-servers`を使う方法ですが，長らくメンテされていないようです。readmeにも以下の記述があり，最近のNginxでは動かない可能性が高いです。
+よく言及されているのは[GUI/nginx-upstream-dynamic-servers](https://github.com/GUI/nginx-upstream-dynamic-servers)を使う方法ですが，長らくメンテされていないようです。readmeにも以下の記述があり，最近のNginxでは動かない可能性が高いです。
 
 > Tested with nginx 1.6, 1.7, 1.8, 1.9.
 
 なので，使わないほうが無難かと思われます。
 
-2017/09/30時点であれば，公式Wikiでも紹介のある`ngx_upstream_jdomain`を使うのが良さそうです。
+2017/09/30時点であれば，公式Wikiでも紹介のあるngx_upstream_jdomainを使うのが良さそうです。
 
 * <https://www.nginx.com/resources/wiki/modules/domain_resolve/>
 * <https://github.com/wdaike/ngx_upstream_jdomain>
