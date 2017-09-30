@@ -1,7 +1,7 @@
 ---
 title: ktrysmt's blog 
 permalink: /blog/
-profile: true 
+profile: false 
 ---
 
 # ktrysmt's blog
