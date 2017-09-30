@@ -1,10 +1,10 @@
 ---
-title: Blog Posts
+title: ktrysmt's blog 
 permalink: /blog/
 profile: true 
 ---
 
-# Blog Posts
+# ktrysmt's blog
 
 <ul id="post-list">
     {% for post in site.posts %}
