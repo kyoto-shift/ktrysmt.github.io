@@ -14,5 +14,3 @@ layout: list
     {% endfor %}
 </ul>
  
-{% include footer.html %}
-
