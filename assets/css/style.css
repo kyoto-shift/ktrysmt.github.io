@@ -836,6 +836,6 @@ iframe.speakerdeck-iframe {
   margin: 0px;
 }
 .recent-post-list .readmore {
-  text-align:center;
+  text-align: right;
   margin-right: 2em;
 }
