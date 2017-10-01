@@ -8,13 +8,13 @@ layout: top
 
 I'm a japanese web developer and live in Japan.  
 - I work as Site Reliability Engineer, Gopher or Javascript Ninja. 
-- I'm interested in Golang, Vim, Docker and Site Reliability Engineering.
+- I'm interested in Golang, Docker, DevOps, SRE and Neovim.
 
 ### SNS
 
 - [Twitter](https://twitter.com/{{ site.authorTwitter }})
 - [Github](https://github.com/{{ site.authorTwitter }})
-- [Blog(ja)]({{ site.url }}/blog/)
+- [Blog(ja)]({{ site.blogTopUrl }})
 - [Talks - Speaker Deck](https://speakerdeck.com/{{ site.authorTwitter }})
 
 ### Contact

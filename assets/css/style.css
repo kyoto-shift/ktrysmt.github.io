@@ -548,6 +548,10 @@ article.list {
     margin: 120px 0 0 0;
 }
 
+article.list {
+    margin: 120px 0 0 0;
+}
+
 article.top {
     margin: 80px 0 0 0;
 }
@@ -848,4 +852,5 @@ iframe.speakerdeck-iframe {
 .recent-post-list .readmore {
   text-align: right;
   margin-right: 2em;
+  margin-top: 1em;
 }

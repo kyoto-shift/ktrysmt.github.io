@@ -1,4 +1,5 @@
 name: "ktrysmt"
+blogName: "ktrysmt's blog"
 description: "ソフトウェアエンジニアリングやマネジメントなど"
 meta_description: "ソフトウェアエンジニアリングやマネジメントなど"
 
@@ -24,8 +25,11 @@ disqus: true
 disqus_shortname: 'syskit'
 
 url:            'https:///ktrysmt.github.io'
-author:         'Kotaro Yoshimatsu'
+blogTopUrl:        'https:///ktrysmt.github.io/blog/'
+author:         'ktrysmt'
 authorTwitter:  'ktrysmt'
+authorFullName: 'Kotaro Yoshimatsu a.k.a ktrysmt'
+authorRealName: 'Kotaro Yoshimatsu' 
 twitter:
   username: ktrysmt
 
