@@ -8,7 +8,7 @@ layout: top
 
 I'm a japanese web developer and live in Japan.  
 - I work as Site Reliability Engineer, Gopher or Javascript Ninja. 
-- I am interested in Golang, Vim, Docker and Site Reliability Engineering.
+- I'm interested in Golang, Vim, Docker and Site Reliability Engineering.
 
 ### SNS
 
