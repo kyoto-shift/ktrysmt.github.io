@@ -285,6 +285,14 @@ em, i { font-style: italic; }
   justify-content: center;
 }
 
+.top h1 {
+  box-shadow: 0 1px 0 #eee;
+}
+.top h2 {
+  margin-bottom: 60px;
+  color: rgb(170,170,170);
+}
+
 .post header {
 	text-align:center;
 
@@ -791,7 +799,7 @@ h2.month {
 
   .recent-post-list .readmore {
     text-align: right;
-    margin-right: 0.5em;
+    margin-right: 0.5em !important;
     margin-top: 1em;
   }
 }
