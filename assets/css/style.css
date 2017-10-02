@@ -765,7 +765,15 @@ h2.month {
 @media screen and (max-width: 540px) {
 	#wrapper { padding:20px 20px 20px 20px;}
 	#header { margin-bottom: 60px; border-bottom: 1px solid #eee; }
-	.post { margin: 40px 0; }
+	.post { margin: 120px 0 40px 0; }
+  article.list {
+    margin: 120px 0 80px 0;
+  }
+  header span.list-headline {
+    color: rgb(170,170,170);
+    margin-bottom: 40px;
+    display: block;
+  }
 	#footer { margin-top: 60px; }
 
 	#post-list, .archive-list { margin-top: 0; }
@@ -780,6 +788,12 @@ h2.month {
 	.post h2.headline { font-size: 13px; }
 	.post h1 { font-size:24px; }
 	.post h2 { font-size:20px; }
+
+  .recent-post-list .readmore {
+    text-align: right;
+    margin-right: 0.5em;
+    margin-top: 1em;
+  }
 }
 
 /* disqus */
